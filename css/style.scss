@@ -70,15 +70,15 @@ header {
   .nav-menu .main-menu li {
     position: relative;
     display: inline-block;
-    margin: 0 30px;
     border-bottom: 5px solid;
     border-image: linear-gradient(to right, #2983D4 0%, #7EC95C 100%) 47% 0%;
+    margin: 0 20px;
   }
   .nav-menu .main-menu li a::after {
     content: "";
     position: absolute;
-    top: 10px;
-    right: -5px;
+    top: 9px;
+    right: -20px;
     width: 10px;
     height: 10px;
     background: url("../img/Shape.svg") no-repeat;
@@ -88,7 +88,7 @@ header {
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    padding: 5px 10px;
+
     color: $zemlya;
   }
   .nav-menu .main-menu li .submenu li {
