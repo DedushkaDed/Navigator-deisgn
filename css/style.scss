@@ -70,7 +70,6 @@ header {
     padding: 15px 10px;
     background-color: white;
     border: none;
-
   }
   .nav-menu .main-menu li {
     position: relative;
@@ -88,7 +87,7 @@ header {
     height: 10px;
     background: url("../img/Shape.svg") no-repeat;
   }
-  .nav-menu .main-menu li a{
+  .nav-menu .main-menu li a {
     @include h5-Head();
     text-decoration: none;
     display: inline-block;
@@ -100,34 +99,69 @@ header {
     width: 100%;
   }
   .nav-menu .main-menu li .submenu li a::after {
-      display: none;
+    display: none;
   }
   .phone {
     color: $blueDark;
   }
 }
 .main {
-    &__prod-section {
-        z-index: 0;
-        margin: 0 20px;
-        position: relative;
-        background: url(/img/img1.jpeg) no-repeat center;
-        min-height: 535px;
-        max-height: 650px;
-        overflow: hidden;
-        color: white;
-        
-        &__title {
-            position: absolute;
-            top: 70%;
-            left: 15%;
-        }
-        &__description {
-            @include body1();
-            position: absolute;
-            top: 85%;
-            left: 15%;
-        }
+  &__prod-section {
+    z-index: 0;
+    margin: 0 20px;
+    position: relative;
+    background: url(/img/img1.jpeg) no-repeat center;
+    min-height: 535px;
+    max-height: 650px;
+    overflow: hidden;
+    color: white;
+  }
+  &__prod-plusi {
+    position: relative;
+    z-index: 1;
+    padding-left: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: -250px 20px;
+    border: 3px solid skyblue;
+
+    .prod-plusi__title {
+      color: #fff;
     }
-    
+    .prod-plusi__description {
+      color: #fff;
+    }
+
+    .prod-plusi__title {
+      //   position: absolute;
+      //   top: 70%;
+      //   left: 15%;
+    }
+    .prod-plusi__description {
+      @include body1();
+      //   position: absolute;
+      //   top: 85%;
+      //   left: 15%;
+    }
+    .prod-plusi__items {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-evenly;
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+
+        .item__left {
+          padding: 10px;
+        }
+        .item__right {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
 }
