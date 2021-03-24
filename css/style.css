@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* Цвет шрифта, который должен быть не сильно заметен */
+/* Button */
+/* BODY */
+/* Button font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.btn {
+  background-color: #6BBD45;
+  padding: 14px 16px;
+  color: #ffffff;
+}
+
+.btn-action {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header {
+  padding: 20px 0;
+  margin: 0 auto;
+  max-width: 1670px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .logo img {
+  max-width: 150px;
+}
+.container .nav-menu .main-menu {
+  padding: 0;
+  list-style-type: none;
+}
+.container .nav-menu .main-menu .submenu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.container .nav-menu .main-menu li:hover > .submenu {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.container .nav-menu .main-menu .submenu li {
+  background-color: red;
+  border: none;
+}
+.container .nav-menu .main-menu li {
+  position: relative;
+  display: inline-block;
+  margin: 0 30px;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(to right, #2983D4 0%, #7EC95C 100%) 47% 0%;
+}
+.container .nav-menu .main-menu li a::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background: url("../img/Shape.svg") no-repeat;
+}
+.container .nav-menu .main-menu li a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 10px;
+  color: #675A54;
+}
+.container .nav-menu .main-menu li .submenu li {
+  clear: both;
+  width: 100%;
+}
+.container .phone {
+  color: #2983D4;
+}
