@@ -63,15 +63,18 @@ header {
     display: block;
   }
   .nav-menu .main-menu .submenu li {
+    @include body3();
     // min-width: 180px;
-    background-color: red;
+    margin: 0px;
+    padding: 15px 10px;
     border: none;
+
   }
   .nav-menu .main-menu li {
     position: relative;
     display: inline-block;
     border-bottom: 5px solid;
-    border-image: linear-gradient(to right, #2983D4 0%, #7EC95C 100%) 47% 0%;
+    border-image: linear-gradient(to right, #2983d4 0%, #7ec95c 100%) 47% 0%;
     margin: 0 20px;
   }
   .nav-menu .main-menu li a::after {
@@ -83,11 +86,10 @@ header {
     height: 10px;
     background: url("../img/Shape.svg") no-repeat;
   }
-  .nav-menu .main-menu li a {
+  .nav-menu .main-menu li a{
     @include h5-Head();
     text-decoration: none;
     display: inline-block;
-    text-align: center;
 
     color: $zemlya;
   }
@@ -95,9 +97,33 @@ header {
     clear: both;
     width: 100%;
   }
+  .nav-menu .main-menu li .submenu li a::after {
+      display: none;
+  }
   .phone {
     color: $blueDark;
   }
 }
 .main {
+    &__prod-section {
+        z-index: 1;
+        margin: 0 20px;
+        position: relative;
+        background: url(/img/img1.jpeg) no-repeat center;
+        min-height: 535px;
+        max-height: 650px;
+        overflow: hidden;
+        color: white;
+    }
+    &__title {
+        position: absolute;
+        top: 70%;
+        left: 15%;
+    }
+    &__description {
+        @include body1();
+        position: absolute;
+        top: 85%;
+        left: 15%;
+    }
 }

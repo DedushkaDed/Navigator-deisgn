@@ -89,14 +89,19 @@ header {
   display: block;
 }
 .container .nav-menu .main-menu .submenu li {
-  background-color: red;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0px;
+  padding: 15px 10px;
   border: none;
 }
 .container .nav-menu .main-menu li {
   position: relative;
   display: inline-block;
   border-bottom: 5px solid;
-  border-image: linear-gradient(to right, #2983D4 0%, #7EC95C 100%) 47% 0%;
+  border-image: linear-gradient(to right, #2983d4 0%, #7ec95c 100%) 47% 0%;
   margin: 0 20px;
 }
 .container .nav-menu .main-menu li a::after {
@@ -115,13 +120,40 @@ header {
   line-height: 17px;
   text-decoration: none;
   display: inline-block;
-  text-align: center;
   color: #675A54;
 }
 .container .nav-menu .main-menu li .submenu li {
   clear: both;
   width: 100%;
 }
+.container .nav-menu .main-menu li .submenu li a::after {
+  display: none;
+}
 .container .phone {
   color: #2983D4;
+}
+
+.main__prod-section {
+  z-index: 1;
+  margin: 0 20px;
+  position: relative;
+  background: url(/img/img1.jpeg) no-repeat center;
+  min-height: 535px;
+  max-height: 650px;
+  overflow: hidden;
+  color: white;
+}
+.main__title {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+}
+.main__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  position: absolute;
+  top: 85%;
+  left: 15%;
 }
