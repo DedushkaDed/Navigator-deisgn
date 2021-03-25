@@ -146,21 +146,22 @@ header {
   color: white;
 }
 .main__prod-plusi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 400px;
   position: relative;
   z-index: 1;
-  margin: -170px 20px;
-  margin-right: 150px;
+  margin: -200px 20px;
+  margin-right: 250px;
   border: 10px solid;
+  padding-left: 100px;
   border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
 }
 .main__prod-plusi .prod-plusi__title {
-  padding: 10px 0;
-  margin-left: 200px;
   color: #fff;
 }
 .main__prod-plusi .prod-plusi__description {
-  padding: 5px 0;
-  margin-left: 200px;
   color: #fff;
 }
 .main__prod-plusi .prod-plusi__description {
@@ -170,16 +171,16 @@ header {
   line-height: 34px;
 }
 .main__prod-plusi .prod-plusi__items {
-  margin: 100px 150px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .main__prod-plusi .prod-plusi__items__item {
   display: flex;
   justify-content: space-between;
+  width: 250px;
 }
 .main__prod-plusi .prod-plusi__items__item .item__left {
-  padding: 0 20px;
+  padding: 0 15px;
 }
 .main__prod-plusi .prod-plusi__items__item .item__right {
   display: flex;

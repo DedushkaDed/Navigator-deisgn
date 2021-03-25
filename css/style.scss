@@ -78,7 +78,7 @@ header {
     display: inline-block;
     margin: 0 20px;
   }
-  .nav-menu .main-menu li:nth-child(-n+3) a::after{
+  .nav-menu .main-menu li:nth-child(-n + 3) a::after {
     content: "";
     position: absolute;
     top: 9px;
@@ -117,24 +117,22 @@ header {
     color: white;
   }
   &__prod-plusi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
     position: relative;
     z-index: 1;
-    // padding-left: 200px;
-    // padding-top: 100px;
-    // padding-bottom: 100px;
-    margin: -170px 20px;
-    margin-right: 150px;
+    margin: -200px 20px;
+    margin-right: 250px;
     border: 10px solid;
+    padding-left: 100px;
     border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
 
     .prod-plusi__title {
-      padding: 10px 0;
-      margin-left: 200px;
       color: #fff;
     }
     .prod-plusi__description {
-      padding: 5px 0;
-      margin-left: 200px;
       color: #fff;
     }
 
@@ -146,17 +144,16 @@ header {
       @include body1();
     }
     .prod-plusi__items {
-      margin: 100px 150px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
 
       &__item {
         display: flex;
         justify-content: space-between;
-        // flex-wrap: wrap;
+        width: 250px;
 
         .item__left {
-          padding: 0 20px;
+          padding: 0 15px;
         }
         .item__right {
           display: flex;
