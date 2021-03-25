@@ -57,6 +57,8 @@ header {
     opacity: 0;
     position: absolute;
     transition: all 0.5s ease;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, #2983d4 0%, #7ec95c 100%) 47% 0%;
   }
   .nav-menu .main-menu li:hover > .submenu {
     visibility: visible;
@@ -74,11 +76,9 @@ header {
   .nav-menu .main-menu li {
     position: relative;
     display: inline-block;
-    border-bottom: 5px solid;
-    border-image: linear-gradient(to right, #2983d4 0%, #7ec95c 100%) 47% 0%;
     margin: 0 20px;
   }
-  .nav-menu .main-menu li a::after {
+  .nav-menu .main-menu li:nth-child(-n+3) a::after{
     content: "";
     position: absolute;
     top: 9px;
@@ -119,21 +119,22 @@ header {
   &__prod-plusi {
     position: relative;
     z-index: 1;
-    padding-left: 200px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin: -250px 20px;
-    // border-top: 10px solid;
-    // border-bottom: 10px solid;
-    // border-right: 10px solid;
-    // border-left: 10px solid;
+    // padding-left: 200px;
+    // padding-top: 100px;
+    // padding-bottom: 100px;
+    margin: -170px 20px;
+    margin-right: 150px;
     border: 10px solid;
-    border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%)47% 10%;
+    border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
 
     .prod-plusi__title {
+      padding: 10px 0;
+      margin-left: 200px;
       color: #fff;
     }
     .prod-plusi__description {
+      padding: 5px 0;
+      margin-left: 200px;
       color: #fff;
     }
 
@@ -145,7 +146,7 @@ header {
       @include body1();
     }
     .prod-plusi__items {
-      margin-top: 50px;
+      margin: 100px 150px;
       display: flex;
       justify-content: space-between;
 
@@ -155,7 +156,7 @@ header {
         // flex-wrap: wrap;
 
         .item__left {
-          padding: 10px 20px;
+          padding: 0 20px;
         }
         .item__right {
           display: flex;
@@ -164,5 +165,16 @@ header {
         }
       }
     }
+  }
+  // Удалить
+  &__random-udalit {
+    position: relative;
+    z-index: 1;
+    padding-left: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: -250px 20px;
+    border: 10px solid;
+    border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
   }
 }
