@@ -12,7 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/swiper/swiper-bundle.min.js"></script>
     <title>Main page</title>
   </head>
   <body>
@@ -62,63 +64,93 @@
       </div>
     </header>
     <main class="main">
-      <div class="main__prod-section"><!-- фото-бэкграунд --></div>
-      <div class="main__prod-plusi">
-        <div class="main__prod__text">
-          <h1 class="prod-plusi__title">Продажа земельных участков</h1>
-          <p class="prod-plusi__description">под ИЖС в Тюмени</p>
-        </div>
-        <div class="prod-plusi__items">
-          <div class="prod-plusi__items__item">
-            <div class="item__left">
-              <img class="item__image" src="img/fast.svg" alt="fast.svg" />
-            </div>
-            <div class="item__right">
-              <h4>Близость к городу</h4>
-              <p>20 минут до центра Тюмени</p>
-            </div>
+      <div class="main__prod-container">
+        <div class="main__prod-section"><!-- фото-бэкграунд --></div>
+        <div class="main__prod-plusi">
+          <div class="main__prod__text">
+            <h1 class="prod-plusi__title">Продажа земельных участков</h1>
+            <p class="prod-plusi__description">под ИЖС в Тюмени</p>
           </div>
-          <div class="prod-plusi__items__item">
-            <div class="item__left">
-              <img
-                class="item__image"
-                src="img/leaf (1).svg"
-                alt="leaf (1).svg"
-              />
+          <div class="prod-plusi__items">
+            <div class="prod-plusi__items__item">
+              <div class="item__left">
+                <img class="item__image" src="img/fast.svg" alt="fast.svg" />
+              </div>
+              <div class="item__right">
+                <h4>Близость к городу</h4>
+                <p>20 минут до центра Тюмени</p>
+              </div>
             </div>
-            <div class="item__right">
-              <h4>Экология</h4>
-              <p>Лоси реки - живописная природа Тишина и покой</p>
+            <div class="prod-plusi__items__item">
+              <div class="item__left">
+                <img
+                  class="item__image"
+                  src="img/leaf (1).svg"
+                  alt="leaf (1).svg"
+                />
+              </div>
+              <div class="item__right">
+                <h4>Экология</h4>
+                <p>Лоси реки - живописная природа Тишина и покой</p>
+              </div>
             </div>
-          </div>
-          <div class="prod-plusi__items__item">
-            <div class="item__left">
-              <img
-                class="item__image"
-                src="img/network (1).svg"
-                alt="network (1).svg"
-              />
+            <div class="prod-plusi__items__item">
+              <div class="item__left">
+                <img
+                  class="item__image"
+                  src="img/network (1).svg"
+                  alt="network (1).svg"
+                />
+              </div>
+              <div class="item__right">
+                <h4>Инфраструктура</h4>
+                <p>Рядом школы, больницы, детские сады, магазины</p>
+              </div>
             </div>
-            <div class="item__right">
-              <h4>Инфраструктура</h4>
-              <p>Рядом школы, больницы, детские сады, магазины</p>
-            </div>
-          </div>
-          <div class="prod-plusi__items__item">
-            <div class="item__left">
-              <img class="item__image" src="img/idea.svg" alt="idea.svg" />
-            </div>
-            <div class="item__right">
-              <h4>Коммуникации</h4>
-              <p>Все комуникации включены в стоимость</p>
+            <div class="prod-plusi__items__item">
+              <div class="item__left">
+                <img class="item__image" src="img/idea.svg" alt="idea.svg" />
+              </div>
+              <div class="item__right">
+                <h4>Коммуникации</h4>
+                <p>Все комуникации включены в стоимость</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- <div class="main__random-udalit">
-        123
-      </div> -->
+      <div class="main__our-offers">
+        <div class="main__our-offers__items">
+          <!-- form_toogle-->
+          <div class="main__our-offers__items__item-left">
+            <!-- item-1 -->
+            <div class="main__our-offers__items__item-left__item item-1">
+              <input
+                type="radio"
+                name="radio-spiskom"
+                id="radio-spiskom-1"
+                value="left"
+              />
+              <label for="radio-spiskom-1">Списком</label>
+            </div>
+            <!-- item-2 -->
+            <div class="main__our-offers__items__item-left__item item-2">
+              <input
+                type="radio"
+                name="radio-spiskom"
+                id="radio-spiskom-2"
+                value="right"
+              />
+              <label for="radio-spiskom-2">На карте</label>
+            </div>
+          </div>
+          <div class="main__our-offers__items__item-right">
+            tut-pravo-chtoto
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="footer"></footer>
   </body>
+  <script src="js/swiper.js"></script>
 </html>
