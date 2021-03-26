@@ -202,6 +202,15 @@ header {
           background: $greenDark;
         }
       }
+      &__item-right {
+        display: flex;
+        // align-items: center;
+      }
+      &__item-right div {
+        flex: 1 1 auto;
+        margin: 0 5px;
+        transform: translateY(5px); //Костыль-элемент приподнят на веерх.
+      }
     }
     
     .swiper-container {

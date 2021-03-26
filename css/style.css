@@ -226,6 +226,14 @@ header {
 .main__our-offers__items__item-left .item-2 input[type=radio]:checked + label {
   background: #6BBD45;
 }
+.main__our-offers__items__item-right {
+  display: flex;
+}
+.main__our-offers__items__item-right div {
+  flex: 1 1 auto;
+  margin: 0 5px;
+  transform: translateY(5px);
+}
 .main__our-offers .swiper-container {
   width: 100%;
   height: 100%;
