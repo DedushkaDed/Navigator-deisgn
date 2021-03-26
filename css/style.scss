@@ -108,7 +108,7 @@ header {
 .main {
   &__prod-section {
     z-index: 0;
-    margin: 0 20px;
+    @include backgroundCenter();
     position: relative;
     background: url(/img/img1.jpeg) no-repeat center;
     min-height: 535px;
@@ -165,10 +165,7 @@ header {
     }
   }
   &__our-offers {
-    max-width: 1300px;
-    margin-top: 250px;
-    margin-left: auto;
-    margin-right: auto;
+    @include blockCenter();
 
     &__items {
       display: flex;
@@ -272,5 +269,16 @@ header {
         }
       }
     }
+  }
+  &__choose-dacha {
+    @include blockCenter();
+    border: 5px solid;
+    border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
+    
+    &__container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    
   }
 }

@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="js/jquery/jquery-ui.min.css">
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
     <title>Main page</title>
   </head>
   <body>
@@ -60,6 +63,7 @@
           </ul>
         </nav>
         <div class="phone">+7 3452 <b>564-276</b></div>
+        <!-- Сделать настоящую кнопку. А не контейнер -->
         <div class="btn btn-action">Заказать звонок</div>
       </div>
     </header>
@@ -130,6 +134,7 @@
                 name="radio-spiskom"
                 id="radio-spiskom-1"
                 value="left"
+                checked
               />
               <label for="radio-spiskom-1">Списком</label>
             </div>
@@ -146,11 +151,19 @@
           </div>
           <div class="main__our-offers__items__item-right">
             <!-- Add Pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-          <div class="main__our-offers__items__item-right__item"><img src="img/arrows/arrow-left.svg" alt="arrow-left.svg"></div>
-          <div class="main__our-offers__items__item-right__item"><img src="img/krugi/krug-green.svg" alt="krug-green.svg"></div>
-          <div class="main__our-offers__items__item-right__item"><img src="img/krugi/krug-grey.svg" alt="krug-grey.svg"></div>
-          <div class="main__our-offers__items__item-right__item"><img src="img/arrows/arrow-right.svg" alt="arrow-right.svg"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="main__our-offers__items__item-right__item">
+              <img src="img/arrows/arrow-left.svg" alt="arrow-left.svg" />
+            </div>
+            <div class="main__our-offers__items__item-right__item">
+              <img src="img/krugi/krug-green.svg" alt="krug-green.svg" />
+            </div>
+            <div class="main__our-offers__items__item-right__item">
+              <img src="img/krugi/krug-grey.svg" alt="krug-grey.svg" />
+            </div>
+            <div class="main__our-offers__items__item-right__item">
+              <img src="img/arrows/arrow-right.svg" alt="arrow-right.svg" />
+            </div>
           </div>
         </div>
         <!-- Swiper -->
@@ -183,7 +196,9 @@
               <div class="swiper__description__bottom">
                 <h5>Участки от 10 до 12 соток</h5>
                 <div class="stat-info">
-                  <a href="#"><img src="img/arrow-right.svg" alt="arrow-right.svg"/></a>
+                  <a href="#"
+                    ><img src="img/arrow-right.svg" alt="arrow-right.svg"
+                  /></a>
                 </div>
               </div>
             </div>
@@ -258,7 +273,37 @@
           <!-- pagination - tut bil -->
         </div>
       </div>
+      <div class="main__choose-dacha">
+        <h2>Выберите свой участок</h2>
+        <div class="main__choose-dacha__container">
+          <div class="main__choose-dacha__price-block">
+            <p class="main__choose-dacha__price-block__title">Стоимость</p>
+            <div id="main__choose-dacha__container__slider-container-money">
+              <div id="custom-handle" class="ui-slider-handle"></div>
+          </div>
+          <div class="main__choose-dacha__price-block__price">
+            <p class="main__choose-dacha__price-block__price__money1">380 249 <span>Р</span></p>
+            <p class="main__choose-dacha__price-block__price__money2">1 907 101 <span>Р</span></p>
+          </div>
+          </div>
+          <div class="main__choose-dacha__price-block">
+            <p class="main__choose-dacha__price-block__title">Размер участка</p>
+            <div id="main__choose-dacha__container__slider-container-uchastki">
+              <div id="custom-handle" class="ui-slider-handle"></div>
+          </div>
+          <div class="main__choose-dacha__price-block__price">
+            <p id="main__choose-dacha__price-block__price__dacha1">5<span>соток</span></p>
+            <p id="main__choose-dacha__price-block__price__dacha2">15<span>соток</span></p>
+          </div>
+          </div>
+          <div class="main__choose-dacha__price-block">
+            <button class="btn btn-action">Подобрать участок</button>
+          </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
   <script src="js/swiper.js"></script>
+  <script src="js/sliderJQUERY.js"></script>
 </html>
