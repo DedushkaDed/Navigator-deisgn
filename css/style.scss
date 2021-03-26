@@ -203,9 +203,17 @@ header {
         }
       }
     }
+    
     .swiper-container {
       width: 100%;
       height: 100%;
+      .swiper-pagination-bullets {
+        // width: initial;
+        // bottom: inherit;
+        // left: inherit;
+        right: 0px;
+        top: 0px;
+      }
 
       .swiper-wrapper {
         .swiper-slide {
