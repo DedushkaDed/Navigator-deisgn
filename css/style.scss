@@ -326,62 +326,69 @@ header {
     z-index: 0;
   }
   // О компании
-  .main__about-company__side-items__item, .main__about-company__main-items__item{
+  .main__about-company__wrapper__side-items__item,
+  .main__about-company__wrapper__main-items__item {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     height: 183px;
     padding: 30px;
     overflow: hidden;
-  }
+  } // about-company__wrapper
   &__about-company {
     @include blockCenter();
-    display: flex;
-    width: 100%;
-    
-    &__main-items {
-      width: 45%;
-      padding-right: 20px;
+    &__title {
+      padding: 50px 0px;
+      color: $zemlya;
+    }
+    &__wrapper {
       display: flex;
-      flex-direction: column;
+      width: 100%;
 
-      &__item {
+      &__main-items {
+        width: 45%;
+        padding-right: 20px;
         display: flex;
         flex-direction: column;
-        border: 1px solid $obvodka;
-      }
-      &__slider {
-        // border: 1px solid skyblue;
-      }
-    }
-    &__side-items {
-      flex-basis: 55%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
 
-      &__items-column {
-        display: flex;
-      }
-      &__item {
-        border: 1px solid $obvodka;
-      }
-      &__item-50 {
-        min-height:260px;
-      }
-      &__item-50-left {
-        color: #fff;
-        background-color: $blueDark;
-      }
-      &__item-50-right {
-        background-color: $backgorund1;
-        span {
-          color: $greenLight;
+        &__item {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid $obvodka;
+        }
+        &__slider {
+          // border: 1px solid skyblue;
         }
       }
-      &__item-green {
-        background-color: $greenLight;
-        color: #fff;
+      &__side-items {
+        flex-basis: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__items-column {
+          display: flex;
+        }
+        &__item {
+          border: 1px solid $obvodka;
+        }
+        &__item-50 {
+          min-height: 260px;
+        }
+        &__item-50-left {
+          color: #fff;
+          background-color: $blueDark;
+        }
+        &__item-50-right {
+          background-color: $backgorund1;
+          span {
+            color: $greenLight;
+          }
+        }
+        &__item-green {
+          background-color: $greenLight;
+          color: #fff;
+        }
       }
     }
   }

@@ -351,7 +351,8 @@ header {
   margin-bottom: 0px;
   z-index: 0;
 }
-.main .main__about-company__side-items__item, .main .main__about-company__main-items__item {
+.main .main__about-company__wrapper__side-items__item,
+.main .main__about-company__wrapper__main-items__item {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -364,46 +365,52 @@ header {
   margin-top: 250px;
   margin-left: auto;
   margin-right: auto;
+}
+.main__about-company__title {
+  padding: 50px 0px;
+  color: #675A54;
+}
+.main__about-company__wrapper {
   display: flex;
   width: 100%;
 }
-.main__about-company__main-items {
+.main__about-company__wrapper__main-items {
   width: 45%;
   padding-right: 20px;
   display: flex;
   flex-direction: column;
 }
-.main__about-company__main-items__item {
+.main__about-company__wrapper__main-items__item {
   display: flex;
   flex-direction: column;
   border: 1px solid #D1D1D1;
 }
-.main__about-company__side-items {
+.main__about-company__wrapper__side-items {
   flex-basis: 55%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.main__about-company__side-items__items-column {
+.main__about-company__wrapper__side-items__items-column {
   display: flex;
 }
-.main__about-company__side-items__item {
+.main__about-company__wrapper__side-items__item {
   border: 1px solid #D1D1D1;
 }
-.main__about-company__side-items__item-50 {
+.main__about-company__wrapper__side-items__item-50 {
   min-height: 260px;
 }
-.main__about-company__side-items__item-50-left {
+.main__about-company__wrapper__side-items__item-50-left {
   color: #fff;
   background-color: #2983D4;
 }
-.main__about-company__side-items__item-50-right {
+.main__about-company__wrapper__side-items__item-50-right {
   background-color: #F3EFED;
 }
-.main__about-company__side-items__item-50-right span {
+.main__about-company__wrapper__side-items__item-50-right span {
   color: #7EC95C;
 }
-.main__about-company__side-items__item-green {
+.main__about-company__wrapper__side-items__item-green {
   background-color: #7EC95C;
   color: #fff;
 }
