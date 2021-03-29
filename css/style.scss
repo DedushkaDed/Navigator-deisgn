@@ -186,6 +186,8 @@ header {
           display: none;
         }
         &__item label {
+          @include body3;
+          color: $zemlya;
           display: inline-block;
           padding: 0px 15px;
           line-height: 34px;
@@ -193,9 +195,11 @@ header {
           user-select: none;
         }
         .item-1 input[type="radio"]:checked + label {
+          color: #fff;
           background: $greenDark;
         }
         .item-2 input[type="radio"]:checked + label {
+          color: #fff;
           background: $greenDark;
         }
       }
@@ -412,6 +416,8 @@ header {
         display: none;
       }
       &__item label {
+        @include body3;
+        color: $zemlya;
         display: inline-block;
         padding: 0px 15px;
         line-height: 34px;
@@ -419,6 +425,7 @@ header {
         user-select: none;
       }
       &__item input[type="radio"]:checked + label {
+        color: #fff;
         background: $greenDark;
       }
     }
@@ -426,19 +433,52 @@ header {
       padding-top: 50px;
       padding-bottom: 0px;
       display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      // Центрирую
-      align-self: center;
-      justify-content: center;
-      text-align: center;
 
       &__wrapper {
-        align-self: center;
-        justify-content: center;
-        text-align: center;
-        align-content: center;
+        position: relative;
         margin: 0 auto;
+        padding: 20px;
+
+        &__item-1::before {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 25px;
+          height: 25px;
+          background: url("../img/content/buy-uchastok/numbers/number1.svg")
+            no-repeat;
+        }
+        &__item-2::before {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 25px;
+          height: 25px;
+          background: url("../img/content/buy-uchastok/numbers/number2.svg")
+            no-repeat;
+        }
+        &__item-3::before {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 25px;
+          height: 25px;
+          background: url("../img/content/buy-uchastok/numbers/number-3.svg")
+            no-repeat;
+        }
+        &__item-4::before {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 25px;
+          height: 25px;
+          background: url("../img/content/buy-uchastok/numbers/number-4.svg")
+            no-repeat;
+        }
 
         &__item {
           display: flex;

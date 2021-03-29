@@ -213,6 +213,11 @@ header {
   display: none;
 }
 .main__our-offers__items__item-left__item label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #675A54;
   display: inline-block;
   padding: 0px 15px;
   line-height: 34px;
@@ -221,9 +226,11 @@ header {
           user-select: none;
 }
 .main__our-offers__items__item-left .item-1 input[type=radio]:checked + label {
+  color: #fff;
   background: #6BBD45;
 }
 .main__our-offers__items__item-left .item-2 input[type=radio]:checked + label {
+  color: #fff;
   background: #6BBD45;
 }
 .main__our-offers__items__item-right {
@@ -438,6 +445,11 @@ header {
   display: none;
 }
 .main__buy-uchastok__wrapper__item label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #675A54;
   display: inline-block;
   padding: 0px 15px;
   line-height: 34px;
@@ -446,24 +458,54 @@ header {
           user-select: none;
 }
 .main__buy-uchastok__wrapper__item input[type=radio]:checked + label {
+  color: #fff;
   background: #6BBD45;
 }
 .main__buy-uchastok__4-shaga-items {
   padding-top: 50px;
   padding-bottom: 0px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-self: center;
-  justify-content: center;
-  text-align: center;
 }
 .main__buy-uchastok__4-shaga-items__wrapper {
-  align-self: center;
-  justify-content: center;
-  text-align: center;
-  align-content: center;
+  position: relative;
   margin: 0 auto;
+  padding: 20px;
+}
+.main__buy-uchastok__4-shaga-items__wrapper__item-1::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/content/buy-uchastok/numbers/number1.svg") no-repeat;
+}
+.main__buy-uchastok__4-shaga-items__wrapper__item-2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/content/buy-uchastok/numbers/number2.svg") no-repeat;
+}
+.main__buy-uchastok__4-shaga-items__wrapper__item-3::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/content/buy-uchastok/numbers/number-3.svg") no-repeat;
+}
+.main__buy-uchastok__4-shaga-items__wrapper__item-4::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/content/buy-uchastok/numbers/number-4.svg") no-repeat;
 }
 .main__buy-uchastok__4-shaga-items__wrapper__item {
   display: flex;
