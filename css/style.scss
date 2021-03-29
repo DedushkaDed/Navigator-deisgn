@@ -506,4 +506,27 @@ header {
       }
     }
   }
+  &__subscribe-to-watch {
+    @include blockCenter();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    // Копипаст с дачи
+    border: 5px solid;
+    border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
+    min-height: 550px;
+    overflow: hidden;
+
+    &__title-wrapper {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: space-evenly;
+
+      &__other-text {
+        background: red;
+        flex-basis: 40%;
+      }
+    }
+  }
 }
