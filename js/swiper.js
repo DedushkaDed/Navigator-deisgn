@@ -24,3 +24,20 @@ var swiper = new Swiper('.swiper-container', {
 		}
 	},
 });
+// О компании - слайдер.
+var swiper2 = new Swiper('.image-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	freeMode: true,
+  
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	// Бесконечный слайдер
+	  loop: true,
+  });
