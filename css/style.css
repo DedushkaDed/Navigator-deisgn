@@ -351,3 +351,41 @@ header {
   margin-bottom: 0px;
   z-index: 0;
 }
+.main .main__about-company__side-items__item {
+  height: 183px;
+  padding: 30px;
+  overflow: hidden;
+}
+.main__about-company {
+  max-width: 1300px;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+}
+.main__about-company__main-items {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main__about-company__main-items__item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid skyblue;
+}
+.main__about-company__side-items {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.main__about-company__side-items__items-column {
+  display: flex;
+}
+.main__about-company__side-items__item {
+  border: 1px solid skyblue;
+}
+.main__about-company__side-items__item-50 {
+  background: slateblue;
+}

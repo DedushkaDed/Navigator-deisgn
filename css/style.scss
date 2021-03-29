@@ -209,7 +209,7 @@ header {
         transform: translateY(5px); //Костыль-элемент приподнят на веерх.
       }
     }
-    
+
     .swiper-container {
       width: 100%;
       height: 100%;
@@ -305,7 +305,8 @@ header {
           justify-content: space-between;
           padding-top: 10px;
           padding-bottom: 0px;
-          &__money1, &__money2 {
+          &__money1,
+          &__money2 {
             @include body2();
           }
         }
@@ -314,14 +315,51 @@ header {
         }
       }
     }
-    
   }
   &__choose-dacha-background {
     position: relative;
-    background: url(../img/content-background/choose-dacha-background.svg) no-repeat;
+    background: url(../img/content-background/choose-dacha-background.svg)
+      no-repeat;
     min-height: 438px;
     margin-top: -500px;
     margin-bottom: 0px;
     z-index: 0;
+  }
+  // О компании
+  .main__about-company__side-items__item{
+    height: 183px;
+    padding: 30px;
+    overflow: hidden;
+  }
+  &__about-company {
+    @include blockCenter();
+    display: flex;
+    width: 100%;
+    &__main-items {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid skyblue;
+      }
+    }
+    &__side-items {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+
+      &__items-column {
+        display: flex;
+      }
+      &__item {
+        border: 1px solid skyblue;
+      }
+      &__item-50 {
+        background: slateblue;
+      }
+    }
   }
 }
