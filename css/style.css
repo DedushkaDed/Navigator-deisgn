@@ -414,6 +414,16 @@ header {
   background-color: #7EC95C;
   color: #fff;
 }
+.main__buy-uchastok {
+  max-width: 1300px;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__buy-uchastok__title {
+  padding: 20px 0;
+  color: #675A54;
+}
 .main__buy-uchastok__wrapper {
   display: inline-block;
   overflow: hidden;
@@ -437,4 +447,33 @@ header {
 }
 .main__buy-uchastok__wrapper__item input[type=radio]:checked + label {
   background: #6BBD45;
+}
+.main__buy-uchastok__4-shaga-items {
+  padding-top: 50px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+.main__buy-uchastok__4-shaga-items__wrapper {
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  margin: 0 auto;
+}
+.main__buy-uchastok__4-shaga-items__wrapper__item {
+  display: flex;
+  border: 1px solid #D1D1D1;
+  border-radius: 50%;
+  width: 114px;
+  height: 114px;
+}
+.main__buy-uchastok__4-shaga-items__wrapper__item img {
+  margin: auto;
+  width: 48px;
+  height: 54px;
 }

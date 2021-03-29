@@ -393,7 +393,11 @@ header {
   }
   // Купить участок просто
   &__buy-uchastok {
-
+    @include blockCenter();
+    &__title {
+      padding: 20px 0;
+      color: $zemlya;
+    }
     &__wrapper {
       display: inline-block;
       overflow: hidden;
@@ -414,8 +418,40 @@ header {
         cursor: pointer;
         user-select: none;
       }
-      &__item  input[type="radio"]:checked + label {
+      &__item input[type="radio"]:checked + label {
         background: $greenDark;
+      }
+    }
+    &__4-shaga-items {
+      padding-top: 50px;
+      padding-bottom: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      // Центрирую
+      align-self: center;
+      justify-content: center;
+      text-align: center;
+
+      &__wrapper {
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        margin: 0 auto;
+
+        &__item {
+          display: flex;
+          border: 1px solid $obvodka;
+          border-radius: 50%;
+          width: 114px;
+          height: 114px;
+          img {
+            margin: auto;
+            width: 48px;
+            height: 54px;
+          }
+        }
       }
     }
   }
