@@ -1,5 +1,5 @@
 // 1 - Слайдер с деньгами
-$("#main__choose-dacha__container__slider-container-money").slider({
+$("#main__choose-dacha__container__price-block__wrapper-slider__slider1").slider({
     min: 1000,
     max: 3000000,
     value: 500000,
@@ -11,7 +11,7 @@ $("#main__choose-dacha__container__slider-container-money").slider({
     }
 });
 // 2 - Слайдер с участками
-$("#main__choose-dacha__container__slider-container-uchastki").slider({
+$("#main__choose-dacha__container__price-block__wrapper-slider__slider2").slider({
     min: 1000,
     max: 3000000,
     value: 500000,
@@ -19,6 +19,6 @@ $("#main__choose-dacha__container__slider-container-uchastki").slider({
     range: "min",
     
     slide: function (event, ui) { 
-        $("main__choose-dacha__price-block__price__dacha1").val(ui.value);
+        $(".main__choose-dacha__price-block__price__dacha1").val(ui.value);
     }
 });

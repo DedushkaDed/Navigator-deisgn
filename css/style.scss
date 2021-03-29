@@ -271,14 +271,57 @@ header {
     }
   }
   &__choose-dacha {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 1;
     @include blockCenter();
     border: 5px solid;
     border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
-    
+    min-height: 550px;
+    overflow: hidden;
+
+    &__title-wrapper {
+      padding: 0px 80px;
+      color: $zemlya;
+    }
     &__container {
       display: flex;
-      justify-content: space-evenly;
+      flex-direction: row;
+      justify-content: space-around;
+
+      &__price-block {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+
+        &__title {
+          @include h5-Head();
+          color: $zemlya;
+        }
+        &__total {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 10px;
+          padding-bottom: 0px;
+          &__money1, &__money2 {
+            @include body2();
+          }
+        }
+        &__wrapper-slider {
+          min-width: 300px;
+        }
+      }
     }
     
+  }
+  &__choose-dacha-background {
+    position: relative;
+    background: url(../img/content-background/choose-dacha-background.svg) no-repeat;
+    min-height: 438px;
+    margin-top: -500px;
+    margin-bottom: 0px;
+    z-index: 0;
   }
 }
