@@ -480,6 +480,15 @@ header {
   height: 25px;
   background: url("../img/content/buy-uchastok/numbers/number1.svg") no-repeat;
 }
+.main__buy-uchastok__4-shaga-items__wrapper__item-1::after, .main__buy-uchastok__4-shaga-items__wrapper__item-2::after, .main__buy-uchastok__4-shaga-items__wrapper__item-3::after {
+  content: "";
+  position: absolute;
+  background: #d1d1d1;
+  top: 50%;
+  left: 150px;
+  width: 180px;
+  height: 1px;
+}
 .main__buy-uchastok__4-shaga-items__wrapper__item-2::before {
   content: "";
   position: absolute;

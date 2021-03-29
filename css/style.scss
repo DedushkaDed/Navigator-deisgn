@@ -449,6 +449,17 @@ header {
           background: url("../img/content/buy-uchastok/numbers/number1.svg")
             no-repeat;
         }
+        &__item-1::after,
+        &__item-2::after,
+        &__item-3::after {
+          content: "";
+          position: absolute;
+          background: #d1d1d1;
+          top: 50%;
+          left: 150px;
+          width: 180px;
+          height: 1px;
+        }
         &__item-2::before {
           content: "";
           position: absolute;
