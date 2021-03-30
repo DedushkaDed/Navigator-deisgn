@@ -626,9 +626,29 @@ header {
   min-height: 450px;
 }
 .main__zemlya-u-nas__wrapper__items-2__main-item {
-  min-width: 593px;
+  max-width: 593px;
+  max-height: 443px;
+  overflow: hidden;
+  border: 1px solid #D1D1D1;
+}
+.main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 443px;
-  background-color: slategrey;
+}
+.main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item {
+  display: flex;
+}
+.main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .main__zemlya-u-nas__wrapper__items-2__side-item {
   display: flex;
@@ -636,7 +656,6 @@ header {
   justify-content: space-between;
 }
 .main__zemlya-u-nas__wrapper__items-2__side-item__item {
-  background-color: slategrey;
   margin-left: 15px;
   max-width: 591px;
   height: 214px;

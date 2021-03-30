@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.our-offers-slider', {
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: true,
@@ -24,8 +24,29 @@ var swiper = new Swiper('.swiper-container', {
 		}
 	},
 });
+
+
 // О компании - слайдер.
 var swiper2 = new Swiper('.image-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	freeMode: true,
+  
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	// Бесконечный слайдер
+	  loop: true,
+  });
+
+
+//   Почему выбирают именно нас?
+var swiper3 = new Swiper('.zemlya-u-nas__wrapper__items-2__main-item__slider', {
 	slidesPerView: 1,
 	spaceBetween: 0,
 	freeMode: true,

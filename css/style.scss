@@ -598,16 +598,44 @@ header {
         // justify-content: space-evenly;
 
         &__main-item {
-          min-width: 593px;
-          min-height: 443px;
-          background-color: slategrey;
+          max-width: 593px;
+          max-height: 443px;
+          overflow: hidden;
+          border: 1px solid $obvodka;
+          // background-color: slategrey;
+
+          &__slider {
+            &__wrapper {
+              &__slide {
+                &__item-row {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  min-height: 443px;
+                  
+                  &__item-column {
+                    padding: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    &__item {
+                      display: flex;
+                      &__text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
         &__side-item {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           &__item {
-            background-color: slategrey;
             margin-left: 15px;
             max-width: 591px;
             height: 214px;
