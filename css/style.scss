@@ -511,21 +511,47 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+
     // Копипаст с дачи
     border: 5px solid;
     border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
     min-height: 550px;
     overflow: hidden;
 
-    &__title-wrapper {
-      flex-basis: 100%;
-      display: flex;
-      justify-content: space-evenly;
+    &__container {
+      padding: 50px;
+      &__title-wrapper {
+        display: flex;
+        padding: 40px 0px;
+        &__title {
+          color: $zemlya;
+          flex-basis: 25%;
+        }
+        &__other-text {
+          @include body2();
+          padding: 15px;
+          flex-basis: 75%;
+        }
+      }
+      &__form-wrapper {
 
-      &__other-text {
-        background: red;
-        flex-basis: 40%;
+        &__form input[type="text"],
+        input[type="tel"] {
+          margin-right: 35px;
+          padding: 10px;
+          width: 355px;
+          height: 50px;
+        }
+        &__form input[type="submit"] {
+          @include btnZapis();
+        }
+        &__form label {
+          @include body4();
+          color: $zemlya;
+        }
+        &__form__obrabotka {
+          padding: 40px 0px;
+        }
       }
     }
   }
