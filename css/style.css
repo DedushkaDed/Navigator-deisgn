@@ -529,6 +529,8 @@ header {
   height: 54px;
 }
 .main__subscribe-to-watch {
+  position: relative;
+  z-index: 1;
   max-width: 1300px;
   margin-top: 250px;
   margin-left: auto;
@@ -576,6 +578,7 @@ header {
   color: #ffffff;
 }
 .main__subscribe-to-watch__container__form-wrapper__form label {
+  margin-left: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -584,4 +587,11 @@ header {
 }
 .main__subscribe-to-watch__container__form-wrapper__form__obrabotka {
   padding: 40px 0px;
+}
+.main__subscribe-to-watch-background {
+  z-index: 0;
+  background: url(../img/content-background/choose-dacha-background.svg) no-repeat;
+  min-height: 438px;
+  margin-top: -500px;
+  margin-bottom: 0px;
 }
