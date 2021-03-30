@@ -211,7 +211,7 @@ header {
         transform: translateY(5px); //Костыль-элемент приподнят на веерх.
       }
     }
-
+    // Slider - 1
     .swiper-container {
       width: 100%;
       height: 100%;
@@ -357,9 +357,6 @@ header {
           display: flex;
           flex-direction: column;
           border: 1px solid $obvodka;
-        }
-        &__slider {
-          // border: 1px solid skyblue;
         }
       }
       &__side-items {
@@ -584,7 +581,7 @@ header {
           max-height: 240px;
           background-color: slategray;
         }
-      } // main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item
+      }
       &__items-2 {
         display: flex;
         min-height: 450px;
@@ -690,6 +687,7 @@ header {
     margin-bottom: 0px;
     z-index: 0;
   }
+
   &__what-new {
     @include blockCenter();
     &__title {
@@ -727,7 +725,6 @@ header {
           color: #fff;
           background: $greenDark;
         }
-        // main__what-new__items__item-right
       }
       &__item-right {
         display: flex;
@@ -736,6 +733,50 @@ header {
         flex: 1 1 auto;
         margin: 0 5px;
         transform: translateY(5px); //Костыль-элемент приподнят на веерх.
+      }
+    }
+    // main__what-new__slider-container
+    &__slider-container {
+      &__swiper-container {
+        &__swiper-wrapper {
+          &__swiper-slide {
+            &__image-container {
+              img {
+                width: 100%;
+              }
+            }
+            &__text-container {
+              overflow: hidden;
+              padding: 20px;
+
+              &__title {
+                padding-bottom: 10px;
+                color: $zemlya;
+              }
+              &__descr {
+                @include body2();
+                color: $graviy;
+              }
+            }
+            &__bottom {
+              display: flex;
+              justify-content: space-between;
+              padding: 1em;
+
+              &__left {
+                @include h5-Head();
+                a {
+                  color: $greenLight;
+                  text-decoration: none;
+                }
+              }
+              &__right {
+                @include body2();
+                color: #979290;
+              }
+            }
+          }
+        }
       }
     }
   }
