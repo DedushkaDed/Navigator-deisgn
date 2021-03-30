@@ -566,4 +566,54 @@ header {
     margin-top: -500px;
     margin-bottom: 0px;
   }
+  &__zemlya-u-nas {
+    @include blockCenter();
+    &__title {
+      padding: 50px 0px;
+      color: $zemlya;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: 1200px;
+      overflow: hidden;
+
+      &__items-1 {
+        
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        
+        &__item {
+          min-width: 288px;
+          min-height: 240px;
+          background-color: slategray;
+        }
+      }
+
+      // items-2
+      &__items-2 {
+        display: flex;
+        min-height: 450px;
+        // justify-content: space-evenly;
+
+        &__main-item {
+          min-width: 593px;
+          min-height: 443px;
+          background-color: slategrey;
+        }
+        &__side-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          &__item {
+            background-color: slategrey;
+            margin-left: 15px;
+            min-width: 592px;
+            height: 214px;
+          }
+        }
+      }
+    }
+  }
 }

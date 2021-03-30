@@ -595,3 +595,49 @@ header {
   margin-top: -500px;
   margin-bottom: 0px;
 }
+.main__zemlya-u-nas {
+  max-width: 1300px;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__zemlya-u-nas__title {
+  padding: 50px 0px;
+  color: #675A54;
+}
+.main__zemlya-u-nas__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  overflow: hidden;
+}
+.main__zemlya-u-nas__wrapper__items-1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.main__zemlya-u-nas__wrapper__items-1__item {
+  min-width: 288px;
+  min-height: 240px;
+  background-color: slategray;
+}
+.main__zemlya-u-nas__wrapper__items-2 {
+  display: flex;
+  min-height: 450px;
+}
+.main__zemlya-u-nas__wrapper__items-2__main-item {
+  min-width: 593px;
+  min-height: 443px;
+  background-color: slategrey;
+}
+.main__zemlya-u-nas__wrapper__items-2__side-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main__zemlya-u-nas__wrapper__items-2__side-item__item {
+  background-color: slategrey;
+  margin-left: 15px;
+  min-width: 592px;
+  height: 214px;
+}
