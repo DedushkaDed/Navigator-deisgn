@@ -723,11 +723,19 @@ header {
           cursor: pointer;
           user-select: none;
         }
-        // main__what-new__items__item-left__item-1
         &__item input[type="radio"]:checked + label {
           color: #fff;
           background: $greenDark;
         }
+        // main__what-new__items__item-right
+      }
+      &__item-right {
+        display: flex;
+      }
+      &__item-right div {
+        flex: 1 1 auto;
+        margin: 0 5px;
+        transform: translateY(5px); //Костыль-элемент приподнят на веерх.
       }
     }
   }

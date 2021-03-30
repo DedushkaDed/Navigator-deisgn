@@ -788,3 +788,11 @@ header {
   color: #fff;
   background: #6BBD45;
 }
+.main__what-new__items__item-right {
+  display: flex;
+}
+.main__what-new__items__item-right div {
+  flex: 1 1 auto;
+  margin: 0 5px;
+  transform: translateY(5px);
+}
