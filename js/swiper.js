@@ -46,7 +46,7 @@ var swiper2 = new Swiper('.image-slider', {
 
 
 //   Почему выбирают именно нас?
-var swiper3 = new Swiper('.zemlya-u-nas__wrapper__items-2__main-item__slider', {
+var swiper3 = new Swiper('.main__zemlya-u-nas__wrapper__items-2__main-item__slider', {
 	slidesPerView: 1,
 	spaceBetween: 0,
 	freeMode: true,
