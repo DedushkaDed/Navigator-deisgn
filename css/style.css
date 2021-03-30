@@ -756,7 +756,7 @@ header {
 .main__what-new__items {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 3em 0;
 }
 .main__what-new__items__item-left {
   display: inline-block;
@@ -801,6 +801,7 @@ header {
 }
 .main__what-new__slider-container__swiper-container__swiper-wrapper__swiper-slide__text-container {
   overflow: hidden;
+  min-height: 175px;
   padding: 20px;
 }
 .main__what-new__slider-container__swiper-container__swiper-wrapper__swiper-slide__text-container__title {

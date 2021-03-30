@@ -697,7 +697,7 @@ header {
     &__items {
       display: flex;
       justify-content: space-between;
-      padding: 1em;
+      padding: 3em 0;
 
       &__item-left {
         display: inline-block;
@@ -747,6 +747,7 @@ header {
             }
             &__text-container {
               overflow: hidden;
+              min-height: 175px;
               padding: 20px;
 
               &__title {
