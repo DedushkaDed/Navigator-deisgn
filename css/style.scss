@@ -25,12 +25,11 @@ h5 {
 }
 .btn {
   background-color: $greenDark;
-  padding: 14px 16px;
+  // padding: 14px 16px;
   color: #ffffff;
 }
 .btn-action {
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  @include btnZapis();
 }
 header {
   padding: 20px 0;
@@ -602,8 +601,7 @@ header {
           max-height: 443px;
           overflow: hidden;
           border: 1px solid $obvodka;
-          // background-color: slategrey;
-
+// main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item__button
           &__slider {
             &__wrapper {
               &__slide {
@@ -623,6 +621,9 @@ header {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-evenly;
+                      }
+                      button {
+                        @include btnZapis();
                       }
                     }
                   }

@@ -72,10 +72,13 @@
 }
 // Button - Записаться
 @mixin btnZapis {
+  font-family: $mainFont;
+  font-weight: bold;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: $greenDark;
   width: 216px;
   height: 50px;
   color: #ffffff;
+  text-align: center;
 }

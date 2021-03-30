@@ -50,13 +50,19 @@ h5 {
 
 .btn {
   background-color: #6BBD45;
-  padding: 14px 16px;
   color: #ffffff;
 }
 
 .btn-action {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  background-color: #6BBD45;
+  width: 216px;
+  height: 50px;
+  color: #ffffff;
+  text-align: center;
 }
 
 header {
@@ -570,12 +576,15 @@ header {
   height: 50px;
 }
 .main__subscribe-to-watch__container__form-wrapper__form input[type=submit] {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #6BBD45;
   width: 216px;
   height: 50px;
   color: #ffffff;
+  text-align: center;
 }
 .main__subscribe-to-watch__container__form-wrapper__form label {
   margin-left: 10px;
@@ -649,6 +658,17 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+.main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #6BBD45;
+  width: 216px;
+  height: 50px;
+  color: #ffffff;
+  text-align: center;
 }
 .main__zemlya-u-nas__wrapper__items-2__side-item {
   display: flex;
