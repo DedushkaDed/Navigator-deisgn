@@ -740,6 +740,51 @@ header {
   background-color: #F3EFED;
   min-height: 224px;
   margin-top: -200px;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   z-index: 0;
+}
+.main__what-new {
+  max-width: 1300px;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__what-new__title {
+  padding: 20px 0;
+  color: #675A54;
+}
+.main__what-new__items {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.main__what-new__items__item-left {
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid #D1D1D1;
+  border-radius: 20px;
+}
+.main__what-new__items__item-left__item {
+  display: inline-block;
+  float: left;
+}
+.main__what-new__items__item-left__item input[type=radio] {
+  display: none;
+}
+.main__what-new__items__item-left__item label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #675A54;
+  display: inline-block;
+  padding: 0px 15px;
+  line-height: 34px;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.main__what-new__items__item-left__item input[type=radio]:checked + label {
+  color: #fff;
+  background: #6BBD45;
 }

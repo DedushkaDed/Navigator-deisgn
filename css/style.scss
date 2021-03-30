@@ -682,13 +682,53 @@ header {
   }
   &__questions-background {
     border-bottom: 7px solid black;
-    // border-bottom: 1px solid linear-gradient(to right, #2983d4 0%, #7ec95c 100%) 47% 0%;
     border-image: linear-gradient(to right, #2983d4 35%, #7ec95c 50%) 47% 0%;
     @include backgroundCenter();
     background-color: $backgorund1;
     min-height: 224px;
     margin-top: -200px;
-    margin-bottom: 100px; // изменить на 0
+    margin-bottom: 0px;
     z-index: 0;
+  }
+  &__what-new {
+    @include blockCenter();
+    &__title {
+      padding: 20px 0;
+      color: $zemlya;
+    }
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+
+      &__item-left {
+        display: inline-block;
+        overflow: hidden;
+        border: 1px solid $obvodka;
+        border-radius: 20px;
+
+        &__item {
+          display: inline-block;
+          float: left;
+        }
+        &__item input[type="radio"] {
+          display: none;
+        }
+        &__item label {
+          @include body3;
+          color: $zemlya;
+          display: inline-block;
+          padding: 0px 15px;
+          line-height: 34px;
+          cursor: pointer;
+          user-select: none;
+        }
+        // main__what-new__items__item-left__item-1
+        &__item input[type="radio"]:checked + label {
+          color: #fff;
+          background: $greenDark;
+        }
+      }
+    }
   }
 }
