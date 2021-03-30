@@ -576,32 +576,24 @@ header {
       flex-direction: column;
       max-width: 1200px;
       overflow: hidden;
-
-      &__items-1 {
-        
+      &__items-1 {  
         display: flex;
         justify-content: space-between;
-        padding-bottom: 20px;
-        
+        padding-bottom: 20px;      
         &__item {
           max-width: 288px;
           max-height: 240px;
           background-color: slategray;
         }
-      }
-
-      // items-2
+      } // main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item
       &__items-2 {
         display: flex;
         min-height: 450px;
-        // justify-content: space-evenly;
-
         &__main-item {
           max-width: 593px;
           max-height: 443px;
           overflow: hidden;
           border: 1px solid $obvodka;
-// main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item__button
           &__slider {
             &__wrapper {
               &__slide {
@@ -610,7 +602,6 @@ header {
                   flex-direction: column;
                   justify-content: space-between;
                   min-height: 443px;
-                  
                   &__item-column {
                     padding: 30px;
                     display: flex;
@@ -625,6 +616,14 @@ header {
                       }
                       button {
                         @include btnZapis();
+                      }
+                      &__arrows-container {
+                        display: flex;
+                        justify-content: space-evenly;
+
+                        &__item {
+                          padding: 10px;
+                        }
                       }
                     }
                   }

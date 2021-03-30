@@ -671,6 +671,13 @@ header {
   color: #ffffff;
   text-align: center;
 }
+.main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item__arrows-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item__arrows-container__item {
+  padding: 10px;
+}
 .main__zemlya-u-nas__wrapper__items-2__side-item {
   display: flex;
   flex-direction: column;
