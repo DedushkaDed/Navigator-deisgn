@@ -688,3 +688,52 @@ header {
   max-width: 591px;
   height: 214px;
 }
+.main__questions {
+  position: relative;
+  z-index: 1;
+  max-width: 1300px;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main__questions__wrapper__form__obrabotka {
+  padding: 20px 0;
+}
+.main__questions__wrapper__form input[type=text],
+.main__questions__wrapper input[type=tel] {
+  margin-right: 15px;
+  padding: 10px;
+  width: 250px;
+  height: 50px;
+}
+.main__questions__wrapper__form input[type=submit] {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #6BBD45;
+  width: 216px;
+  height: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+.main__questions__wrapper__form label {
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #675A54;
+}
+.main__questions-background {
+  border-bottom: 7px solid black;
+  border-image: linear-gradient(to right, #2983d4 35%, #7ec95c 50%) 47% 0%;
+  margin: 0 20px;
+  background-color: #F3EFED;
+  min-height: 224px;
+  margin-top: -200px;
+  margin-bottom: 100px;
+  z-index: 0;
+}

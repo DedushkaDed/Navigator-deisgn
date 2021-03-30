@@ -535,7 +535,6 @@ header {
         }
       }
       &__form-wrapper {
-
         &__form input[type="text"],
         input[type="tel"] {
           margin-right: 35px;
@@ -576,10 +575,10 @@ header {
       flex-direction: column;
       max-width: 1200px;
       overflow: hidden;
-      &__items-1 {  
+      &__items-1 {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 20px;      
+        padding-bottom: 20px;
         &__item {
           max-width: 288px;
           max-height: 240px;
@@ -644,5 +643,48 @@ header {
         }
       }
     }
+  }
+  &__questions {
+    position: relative;
+    z-index: 1;
+    @include blockCenter();
+    display: flex;
+    justify-content: space-evenly;
+
+    &__wrapper {
+      &__form {
+        &__obrabotka {
+          padding: 20px 0;
+        }
+      }
+      &__form input[type="text"],
+      input[type="tel"] {
+        margin-right: 15px;
+        padding: 10px;
+        width: 250px;
+        height: 50px;
+      }
+      &__form input[type="submit"] {
+        @include btnZapis();
+      }
+      &__form label {
+        margin-left: 15px;
+        @include body4();
+        color: $zemlya;
+      }
+    }
+    &__text-container {
+    }
+  }
+  &__questions-background {
+    border-bottom: 7px solid black;
+    // border-bottom: 1px solid linear-gradient(to right, #2983d4 0%, #7ec95c 100%) 47% 0%;
+    border-image: linear-gradient(to right, #2983d4 35%, #7ec95c 50%) 47% 0%;
+    @include backgroundCenter();
+    background-color: $backgorund1;
+    min-height: 224px;
+    margin-top: -200px;
+    margin-bottom: 100px; // изменить на 0
+    z-index: 0;
   }
 }
