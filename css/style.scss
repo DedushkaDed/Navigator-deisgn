@@ -585,8 +585,8 @@ header {
         padding-bottom: 20px;
         
         &__item {
-          min-width: 288px;
-          min-height: 240px;
+          max-width: 288px;
+          max-height: 240px;
           background-color: slategray;
         }
       }
@@ -609,7 +609,7 @@ header {
           &__item {
             background-color: slategrey;
             margin-left: 15px;
-            min-width: 592px;
+            max-width: 591px;
             height: 214px;
           }
         }

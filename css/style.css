@@ -617,8 +617,8 @@ header {
   padding-bottom: 20px;
 }
 .main__zemlya-u-nas__wrapper__items-1__item {
-  min-width: 288px;
-  min-height: 240px;
+  max-width: 288px;
+  max-height: 240px;
   background-color: slategray;
 }
 .main__zemlya-u-nas__wrapper__items-2 {
@@ -638,6 +638,6 @@ header {
 .main__zemlya-u-nas__wrapper__items-2__side-item__item {
   background-color: slategrey;
   margin-left: 15px;
-  min-width: 592px;
+  max-width: 591px;
   height: 214px;
 }
