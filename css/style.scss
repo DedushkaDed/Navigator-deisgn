@@ -674,6 +674,10 @@ header {
       }
     }
     &__text-container {
+      color: $zemlya;
+      &__text {
+        padding-top: 10px;
+      }
     }
   }
   &__questions-background {

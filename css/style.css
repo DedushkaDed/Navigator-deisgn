@@ -727,6 +727,12 @@ header {
   line-height: 16px;
   color: #675A54;
 }
+.main__questions__text-container {
+  color: #675A54;
+}
+.main__questions__text-container__text {
+  padding-top: 10px;
+}
 .main__questions-background {
   border-bottom: 7px solid black;
   border-image: linear-gradient(to right, #2983d4 35%, #7ec95c 50%) 47% 0%;
