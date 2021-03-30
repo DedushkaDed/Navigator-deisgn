@@ -617,6 +617,7 @@ header {
                     justify-content: space-between;
                     &__item {
                       display: flex;
+                      align-items: center;
                       &__text {
                         display: flex;
                         flex-direction: column;

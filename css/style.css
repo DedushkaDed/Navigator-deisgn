@@ -653,6 +653,7 @@ header {
 }
 .main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item {
   display: flex;
+  align-items: center;
 }
 .main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item__text {
   display: flex;
