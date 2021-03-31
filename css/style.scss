@@ -114,15 +114,16 @@ header {
   &__prod-plusi {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 400px;
+    justify-content: space-between;
+    min-height: 300px;
     position: relative;
     z-index: 1;
     margin: -200px 20px;
     margin-right: 250px;
-    padding-left: 100px;
+    padding-left: 250px;
 
     &__text {
+      padding: 30px 0;
       border-left: none;
       position: relative;
       background: none;
@@ -131,9 +132,9 @@ header {
       content: "";
       position: absolute;
       top: 0;
-      bottom: -200px;
+      bottom: -31px;
       right: 0;
-      left: -310px;
+      left: -250px;
       border: 11px solid transparent;
       border-left: none;
       border-bottom: none;
@@ -158,8 +159,6 @@ header {
         color: $zemlya;
         display: flex;
         justify-content: space-between;
-        min-width: 300px;
-        min-height: 100px;
 
         &__left {
           align-self: center;
@@ -188,6 +187,7 @@ header {
   }
   &__our-offers {
     @include blockCenter();
+    margin-top: 400px;
 
     &__items {
       display: flex;
