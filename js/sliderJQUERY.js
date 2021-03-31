@@ -19,9 +19,10 @@ $("#main__choose-dacha__container__price-block__wrapper-slider__slider2").slider
     max: 15,
     value: 6,
     animate: "slow",
-    range: "min",
+    range: true,
     
     slide: function (event, ui) { 
-        $(".main__choose-dacha__price-block__price__dacha1").val(ui.value);
+        $("#main__choose-dacha__container__price-block__total__dacha1").text(ui.values[ 0 ] + " соток");
+        $("#main__choose-dacha__container__price-block__total__dacha2").text(ui.values[ 1 ] + " соток");
     }
 });

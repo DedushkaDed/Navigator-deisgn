@@ -290,7 +290,7 @@ header {
             border: 10px solid $greenLight;
             border-radius: 50%;
             top: -3px;
-            margin-left: -18px;
+            margin-left: -5px;
             cursor: pointer;
             background: transparent;
           }
@@ -304,9 +304,10 @@ header {
           justify-content: space-between;
           padding-top: 10px;
           padding-bottom: 0px;
-          &__money1,
-          &__money2 {
+          
+          p {
             @include body2();
+            color: $graviy;
           }
         }
         &__wrapper-slider {

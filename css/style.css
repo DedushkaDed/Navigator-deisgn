@@ -62,6 +62,8 @@ h5 {
   height: 50px;
   color: #ffffff;
   text-align: center;
+  border: none;
+  cursor: pointer;
 }
 
 header {
@@ -330,7 +332,7 @@ header {
   border: 10px solid #7EC95C;
   border-radius: 50%;
   top: -3px;
-  margin-left: -18px;
+  margin-left: -5px;
   cursor: pointer;
   background: transparent;
 }
@@ -344,11 +346,12 @@ header {
   padding-top: 10px;
   padding-bottom: 0px;
 }
-.main__choose-dacha__container__price-block__total__money1, .main__choose-dacha__container__price-block__total__money2 {
+.main__choose-dacha__container__price-block__total p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  color: #392424;
 }
 .main__choose-dacha__container__price-block__wrapper-slider {
   min-width: 300px;
@@ -603,6 +606,8 @@ header {
   height: 50px;
   color: #ffffff;
   text-align: center;
+  border: none;
+  cursor: pointer;
 }
 .main__subscribe-to-watch__container__form-wrapper__form label {
   margin-left: 10px;
@@ -708,6 +713,8 @@ header {
   height: 50px;
   color: #ffffff;
   text-align: center;
+  border: none;
+  cursor: pointer;
 }
 .main__zemlya-u-nas__wrapper__items-2__main-item__slider__wrapper__slide__item-row__item-column__item__arrows-container {
   display: flex;
@@ -756,6 +763,8 @@ header {
   height: 50px;
   color: #ffffff;
   text-align: center;
+  border: none;
+  cursor: pointer;
 }
 .main__questions__wrapper__form label {
   margin-left: 15px;
@@ -923,6 +932,8 @@ header {
   height: 50px;
   color: #ffffff;
   text-align: center;
+  border: none;
+  cursor: pointer;
   border: none;
 }
 .footer__wrapper-top__top__subscribe-to-news__right__form label {
