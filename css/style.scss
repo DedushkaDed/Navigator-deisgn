@@ -782,3 +782,64 @@ header {
     }
   }
 }
+
+.footer {
+  &__wrapper-top {
+    background-color: $graviy;
+    &__top {
+      max-width: 1300px;
+      margin: 0 auto;
+      min-height: 110px;
+      display: flex;
+      justify-content: space-around;
+
+      &__subscribe-to-news {
+        display: flex;
+
+        &__left {
+          display: flex;
+          align-self: center;
+          justify-content: space-evenly;
+
+          &__text {
+            flex-basis: 50%;
+            color: #fff;
+          }
+          img {
+            max-width: 63.3px;
+          }
+        }
+        &__right {
+          padding: 20px;
+          flex-basis: 70%;
+
+          &__form {
+            &__obrabotka {
+              padding-top: 10px;
+            }
+          }
+          &__form input[type="email"] {
+            margin-right: 15px;
+            width: 275px;
+            height: 50px;
+          }
+          &__form input[type="submit"] {
+            @include btnZapis();
+            border: none;
+          }
+          &__form label {
+            margin-left: 15px;
+            @include body4();
+            color: #fff;
+          }
+        }
+      }
+      &__socials {
+        display: flex;
+        img {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
