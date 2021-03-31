@@ -123,9 +123,22 @@ header {
     padding-left: 100px;
 
     &__text {
-      border: 10px solid;
       border-left: none;
-      border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
+      position: relative;
+      background: none;
+    }
+    &__text::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: -200px;
+      right: 0;
+      left: -310px;
+      border: 11px solid transparent;
+      border-left: none;
+      border-bottom: none;
+      border-image: -webkit-gradient(linear, left top, left bottom, color-stop(37%, #2983d4)) 35% 10%;
+      z-index: 10;
     }
 
     &__title {
@@ -138,6 +151,8 @@ header {
     &__items {
       display: flex;
       justify-content: space-evenly;
+      position: relative;
+      background: none;
 
       &__item {
         color: $zemlya;
@@ -147,7 +162,7 @@ header {
         min-height: 100px;
 
         &__left {
-        align-self: center;
+          align-self: center;
           padding: 0 15px;
         }
         &__right {
@@ -156,6 +171,19 @@ header {
           justify-content: space-evenly;
         }
       }
+    }
+    &__items::before {
+      content: "";
+      position: absolute;
+      top: -45px;
+      bottom: -90px;
+      right: 0;
+      left: 380px;
+      border: 11px solid transparent;
+      border-left: none;
+      border-top: none;
+      border-image: linear-gradient(to bottom, #2983d4 37%, #7ec95c 46%) 35% 10%;
+      z-index: 10;
     }
   }
   &__our-offers {
