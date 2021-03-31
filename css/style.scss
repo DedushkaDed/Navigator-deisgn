@@ -25,7 +25,6 @@ h5 {
 }
 .btn {
   background-color: $greenDark;
-  // padding: 14px 16px;
   color: #ffffff;
 }
 .btn-action {
@@ -64,7 +63,6 @@ header {
   }
   .nav-menu .main-menu .submenu li {
     @include body3();
-    // min-width: 180px;
     margin: 0px;
     padding: 15px 10px;
     background-color: white;
@@ -122,38 +120,37 @@ header {
     z-index: 1;
     margin: -200px 20px;
     margin-right: 250px;
-    border: 10px solid;
     padding-left: 100px;
-    border-left: none;
-    border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
 
-    .prod-plusi__title {
-      color: #fff;
-    }
-    .prod-plusi__description {
-      color: #fff;
+    &__text {
+      border: 10px solid;
+      border-left: none;
+      border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
     }
 
-    .prod-plusi__title {
-      // Позицинировал через абсолют
+    &__title {
+      color: #fff;
     }
-    .prod-plusi__description {
-      // Позицинировал через абсолют
+    &__description {
       @include body1();
+      color: #fff;
     }
-    .prod-plusi__items {
+    &__items {
       display: flex;
       justify-content: space-evenly;
 
       &__item {
+        color: $zemlya;
         display: flex;
         justify-content: space-between;
-        width: 250px;
+        min-width: 300px;
+        min-height: 100px;
 
-        .item__left {
+        &__left {
+        align-self: center;
           padding: 0 15px;
         }
-        .item__right {
+        &__right {
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
@@ -296,15 +293,15 @@ header {
           }
           .ui-slider .ui-slider-range {
             background: $greenLight;
-            height:12px;
-        }
+            height: 12px;
+          }
         }
         &__total {
           display: flex;
           justify-content: space-between;
           padding-top: 10px;
           padding-bottom: 0px;
-          
+
           p {
             @include body2();
             color: $graviy;
