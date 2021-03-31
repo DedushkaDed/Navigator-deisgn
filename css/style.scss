@@ -847,6 +847,68 @@ header {
     &__bot {
       max-width: 1300px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__nav-top {
+        display: flex;
+        justify-content: space-evenly;
+
+        &__item {
+          ul {
+            list-style-type: none;
+
+            li {
+              padding: 10px 0;
+
+              a {
+                text-decoration: none;
+                color: #fff;
+              }
+              .checked {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        &__contact-container {
+          padding: 10px 0;
+          &__title {
+            color: #fff;
+          }
+          &__item-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-height: 420px;
+
+            &__item {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+              padding-top: 10px;
+              // justify-content: space-evenly;
+              min-height: 150px; // Убрать потом ?
+              &__title {
+                color: #fff;
+              }
+              &__text {
+                color: $obvodka
+              }
+            }
+            &__item-bottom {
+              &__text {
+                color: #fff;
+              }
+              &__schema {
+                color: #fff;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
