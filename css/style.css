@@ -320,6 +320,24 @@ header {
   line-height: 17px;
   color: #675A54;
 }
+.main__choose-dacha__container__price-block__wrapper-slider .ui-slider.ui-slider-horizontal {
+  background: #fff;
+  border: none;
+}
+.main__choose-dacha__container__price-block__wrapper-slider .ui-slider .ui-slider-handle {
+  width: 0;
+  height: 0;
+  border: 10px solid #7EC95C;
+  border-radius: 50%;
+  top: -3px;
+  margin-left: -18px;
+  cursor: pointer;
+  background: transparent;
+}
+.main__choose-dacha__container__price-block__wrapper-slider .ui-slider .ui-slider-range {
+  background: #7EC95C;
+  height: 12px;
+}
 .main__choose-dacha__container__price-block__total {
   display: flex;
   justify-content: space-between;
