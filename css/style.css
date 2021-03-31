@@ -271,21 +271,6 @@ header {
   font-size: 13px;
   line-height: 16px;
 }
-.main__our-offers .swiper-container .swiper-wrapper .swiper-slide .stat-info {
-  position: relative;
-  border: 1px solid grey;
-  border-radius: 45px;
-  width: 45px;
-  height: 45px;
-}
-.main__our-offers .swiper-container .swiper-wrapper .swiper-slide .stat-info a img {
-  position: absolute;
-  top: calc(25% + 2px);
-  left: calc(25%);
-}
-.main__our-offers .swiper-container .swiper-wrapper .swiper__description-container .stats li {
-  list-style-type: none;
-}
 .main__our-offers .swiper-container .swiper-wrapper .swiper__description-container .description {
   padding: 10px;
 }
