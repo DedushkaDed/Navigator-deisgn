@@ -17,7 +17,7 @@ $("#main__choose-dacha__container__price-block__wrapper-slider__slider1").slider
 $("#main__choose-dacha__container__price-block__wrapper-slider__slider2").slider({
     min: 1,
     max: 15,
-    value: 6,
+    values: [5, 15],
     animate: "slow",
     range: true,
     
