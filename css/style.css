@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* Цвет шрифта, который должен быть не сильно заметен */
-/* Button */
 /* BODY */
 /* Button font */
 * {
@@ -909,11 +908,12 @@ header {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  min-height: 550px;
+  justify-content: space-evenly;
 }
 .footer__wrapper-bottom__bot__nav-top {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .footer__wrapper-bottom__bot__nav-top__item ul {
   list-style-type: none;
@@ -959,4 +959,19 @@ header {
 .footer__wrapper-bottom__bot__nav-top__contact-container__item-container__item-bottom__schema {
   color: #fff;
   font-weight: bold;
+}
+.footer__wrapper-bottom__bot__info {
+  display: flex;
+  flex-direction: column;
+}
+.footer__wrapper-bottom__bot__info__item {
+  color: #AEAEAE;
+  padding: 10px 0;
+}
+.footer__wrapper-bottom__bot__info__item-three {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__wrapper-bottom__bot__info__item-three__sub-item .checked {
+  color: #AEAEAE;
 }
