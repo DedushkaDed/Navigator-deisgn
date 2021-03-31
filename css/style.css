@@ -309,16 +309,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  position: relative;
-  z-index: 1;
   max-width: 1300px;
   margin-top: 250px;
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid;
-  border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
   min-height: 550px;
-  overflow: hidden;
 }
 .main__choose-dacha__title-wrapper {
   padding: 0px 80px;
@@ -355,13 +350,37 @@ header {
 .main__choose-dacha__container__price-block__wrapper-slider {
   min-width: 300px;
 }
+.main__border {
+  position: relative;
+}
+.main__border::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: -200px;
+  bottom: -200px;
+  border: 7px solid transparent;
+  border-image: linear-gradient(to bottom, #2983d4 50%, #7ec95c 61%) 15% 10%;
+  border-right: none;
+}
+.main__border::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -200px;
+  bottom: -200px;
+  z-index: -1;
+  border-right: 7px solid transparent;
+  border-image: linear-gradient(to bottom, #2983d4 50%, #7ec95c 61%) 15% 10%;
+}
 .main__choose-dacha-background {
   position: relative;
   background: url(../img/content-background/choose-dacha-background.svg) no-repeat;
   min-height: 438px;
   margin-top: -500px;
   margin-bottom: 0px;
-  z-index: 0;
+  z-index: -1;
 }
 .main .main__about-company__wrapper__side-items__item,
 .main .main__about-company__wrapper__main-items__item {
@@ -535,7 +554,6 @@ header {
 }
 .main__subscribe-to-watch {
   position: relative;
-  z-index: 1;
   max-width: 1300px;
   margin-top: 250px;
   margin-left: auto;
@@ -543,12 +561,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 5px solid;
-  border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
   min-height: 550px;
-  overflow: hidden;
 }
 .main__subscribe-to-watch__container {
+  position: relative;
   padding: 50px;
 }
 .main__subscribe-to-watch__container__title-wrapper {
@@ -596,8 +612,28 @@ header {
 .main__subscribe-to-watch__container__form-wrapper__form__obrabotka {
   padding: 40px 0px;
 }
+.main__subscribe-to-watch__container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: -100px;
+  right: 0;
+  bottom: -100px;
+  border: 7px solid transparent;
+  border-image: linear-gradient(to bottom, #2983d4 50%, #7ec95c 61%) 15% 10%;
+  border-right: none;
+}
+.main__subscribe-to-watch__container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -100px;
+  bottom: -100px;
+  z-index: -1;
+  border-right: 7px solid transparent;
+  border-image: linear-gradient(to bottom, #2983d4 50%, #7ec95c 61%) 15% 10%;
+}
 .main__subscribe-to-watch-background {
-  z-index: 0;
   background: url(../img/content-background/choose-dacha-background.svg) no-repeat;
   min-height: 438px;
   margin-top: -500px;

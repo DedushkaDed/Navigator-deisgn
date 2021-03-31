@@ -44,8 +44,6 @@ header {
   .logo img {
     max-width: 150px;
   }
-  .nav-menu {
-  }
   .nav-menu .main-menu {
     padding: 0;
     list-style-type: none;
@@ -276,13 +274,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    position: relative;
-    z-index: 1;
     @include blockCenter();
-    border: 5px solid;
-    border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
     min-height: 550px;
-    overflow: hidden;
+    // overflow: hidden;
 
     &__title-wrapper {
       padding: 0px 80px;
@@ -296,7 +290,6 @@ header {
       &__price-block {
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
 
         &__title {
           @include h5-Head();
@@ -318,6 +311,30 @@ header {
       }
     }
   }
+  &__border {
+    position: relative;
+  }
+  &__border::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: -200px;
+    bottom: -200px;
+    border: 7px solid transparent;
+    border-image: linear-gradient(to bottom, #2983d4 50%, #7ec95c 61%) 15% 10%;
+    border-right: none;
+  }
+  &__border::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -200px;
+    bottom: -200px;
+    z-index: -1;
+    border-right: 7px solid transparent;
+    border-image: linear-gradient(to bottom, #2983d4 50%, #7ec95c 61%) 15% 10%;
+  }
   &__choose-dacha-background {
     position: relative;
     background: url(../img/content-background/choose-dacha-background.svg)
@@ -325,7 +342,7 @@ header {
     min-height: 438px;
     margin-top: -500px;
     margin-bottom: 0px;
-    z-index: 0;
+    z-index: -1;
   }
   // О компании
   .main__about-company__wrapper__side-items__item,
@@ -504,19 +521,14 @@ header {
   }
   &__subscribe-to-watch {
     position: relative;
-    z-index: 1;
     @include blockCenter();
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
-    // Копипаст с дачи
-    border: 5px solid;
-    border-image: linear-gradient(to bottom, #2983d4 49%, #7ec95c 51%) 47% 10%;
     min-height: 550px;
-    overflow: hidden;
 
     &__container {
+      position: relative;
       padding: 50px;
       &__title-wrapper {
         display: flex;
@@ -552,9 +564,29 @@ header {
         }
       }
     }
+    &__container::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: -100px;
+      right: 0;
+      bottom: -100px;
+      border: 7px solid transparent;
+      border-image: linear-gradient(to bottom, #2983d4 50%, #7ec95c 61%) 15% 10%;
+      border-right: none;
+    }
+    &__container::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -100px;
+      bottom: -100px;
+      z-index: -1;
+      border-right: 7px solid transparent;
+      border-image: linear-gradient(to bottom, #2983d4 50%, #7ec95c 61%) 15% 10%;
+    }
   }
   &__subscribe-to-watch-background {
-    z-index: 0;
     background: url(../img/content-background/choose-dacha-background.svg)
       no-repeat;
     min-height: 438px;
