@@ -901,3 +901,10 @@ header {
 .footer__wrapper-top__top__socials img {
   padding: 10px;
 }
+.footer__wrapper-bottom {
+  background-color: #675A54;
+}
+.footer__wrapper-bottom__bot {
+  max-width: 1300px;
+  margin: 0 auto;
+}

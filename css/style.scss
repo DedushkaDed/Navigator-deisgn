@@ -842,4 +842,11 @@ header {
       }
     }
   }
+  &__wrapper-bottom {
+    background-color: $zemlya;
+    &__bot {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+  }
 }
