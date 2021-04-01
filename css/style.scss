@@ -404,7 +404,7 @@ header {
     height: 183px;
     padding: 30px;
     overflow: hidden;
-  } // about-company__wrapper
+  }
   &__about-company {
     @include blockCenter();
     &__title {
@@ -413,34 +413,42 @@ header {
     }
     &__wrapper {
       display: flex;
-      width: 100%;
+      justify-content: space-between;
 
       &__main-items {
-        width: 45%;
-        padding-right: 20px;
+        width: 49%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
 
         &__item {
           display: flex;
           flex-direction: column;
           border: 1px solid $obvodka;
         }
+        &__slider {
+          height: 490px;
+        }
+      }
+      .swiper-container {
+        text-align: center;
       }
       &__side-items {
-        flex-basis: 55%;
+        flex-basis: 49%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         &__items-column {
           display: flex;
+          justify-content: space-between;
         }
         &__item {
           border: 1px solid $obvodka;
         }
         &__item-50 {
-          min-height: 260px;
+          min-height: 220px;
+          max-width: 310px;
         }
         &__item-50-left {
           color: #fff;
