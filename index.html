@@ -63,8 +63,7 @@
           </ul>
         </nav>
         <div class="phone">+7 3452 <b>564-276</b></div>
-        <!-- Сделать настоящую кнопку. А не контейнер -->
-        <div><button class="btn btn-action">Заказать звонок</button></div>
+        <div><button class="btn btn-action" onclick="showContactCall()">Заказать звонок</button></div>
       </div>
     </header>
     <main class="main">
@@ -902,7 +901,7 @@
           <div class="popup__head">
             <h2 class="popup__title">Обратный звонок</h2>
             <p>Оставьте контактные данные, и мы вам перезвоним!</p>
-            <img class="close-popup" src="./img/pop-up-forms/obratnaya-svyaz/close.svg" alt="Закрыть">
+            <img class="close-popup" onclick="closeContactForm()" src="./img/pop-up-forms/obratnaya-svyaz/close.svg" alt="Закрыть">
           </div>
           <form class="popup-form" action="#" id="form">
             <div>
@@ -915,7 +914,7 @@
               <input type="checkbox" name="checkbox" id="checkbox">
               <label for="checkbox">Подтверждаю согласие с <a href="">политикой обработки персональных данных</a></label>
             </div>
-            <button class="btn" type="submit">Отправить</button>
+            <button class="btn-popup" onclick="showContactCallSucess()" type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -926,7 +925,7 @@
           <div class="popup-2__head">
             <h2 class="popup-2__title">Спасибо! Заявка отправлена</h2>
             <p>В ближайшее время с вами свяжется наш специалист</p>
-            <img class="close-popup" src="./img/pop-up-forms/obratnaya-svyaz/close.svg" alt="Закрыть">
+            <img class="close-popup" onclick="closeContactForm()" src="./img/pop-up-forms/obratnaya-svyaz/close.svg" alt="Закрыть">
           </div>
           <div class="telephone">
             <img class="telephone-popup" src="./img/pop-up-forms/obratnaya-svyaz/telephone.svg" alt="telephone.svg">
@@ -937,4 +936,5 @@
   </body>
   <script src="js/swiper.js"></script>
   <script src="js/sliderJQUERY.js"></script>
+  <script src="js/main.js"></script>
 </html>

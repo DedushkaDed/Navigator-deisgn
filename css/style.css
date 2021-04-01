@@ -1107,6 +1107,7 @@ header {
   padding: 10px 0;
 }
 .popup .close-popup {
+  cursor: pointer;
   position: absolute;
   top: 25px;
   right: 30px;
@@ -1137,7 +1138,7 @@ header {
   font-weight: bold;
   color: #675A54;
 }
-.popup-form .btn {
+.popup-form .btn-popup {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   border-top-left-radius: 20px;
@@ -1152,13 +1153,14 @@ header {
 }
 
 .popup-2 {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
   top: 0;
   left: 0;
-  opacity: 1;
+  opacity: 0;
   z-index: 100;
   transition: all 0.4s;
 }
@@ -1197,6 +1199,7 @@ header {
   padding: 10px 0;
 }
 .popup-2 .close-popup {
+  cursor: pointer;
   position: absolute;
   top: 25px;
   right: 30px;

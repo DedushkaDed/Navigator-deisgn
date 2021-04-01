@@ -1052,6 +1052,7 @@ header {
     padding: 10px 0;
   }
   .close-popup {
+    cursor: pointer;
     position: absolute;
     top: 25px;
     right: 30px;
@@ -1080,20 +1081,20 @@ header {
         }
       }
     }
-    .btn {
+    .btn-popup {
       @include btnZapis();
     }
   }
 }
 .popup-2 {
-  // display: none; // Изменить в JS на block
+  display: none; // Изменить в JS на block
   position: fixed;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
   top: 0;
   left: 0;
-  opacity: 1; // Изменить в JS na 1.
+  opacity: 0; // Изменить в JS na 1.
   z-index: 100;
   transition: all 0.4s;
 
@@ -1136,6 +1137,7 @@ header {
     padding: 10px 0;
   }
   .close-popup {
+    cursor: pointer;
     position: absolute;
     top: 25px;
     right: 30px;
