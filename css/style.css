@@ -225,6 +225,9 @@ header {
   border-image: linear-gradient(to bottom, #2983d4 37%, #7ec95c 46%) 35% 10%;
   z-index: 10;
 }
+.main .offers-slider-container__yMap {
+  display: none;
+}
 .main__our-offers {
   max-width: 1300px;
   margin-top: 250px;
@@ -270,6 +273,14 @@ header {
 .main__our-offers__items__item-left .item-2 input[type=radio]:checked + label {
   color: #fff;
   background: #6BBD45;
+}
+.main__our-offers__items .yMap-right {
+  align-self: center;
+  display: none;
+}
+.main__our-offers__items .yMap-right__title a {
+  color: #2983D4;
+  text-decoration: none;
 }
 .main__our-offers__items__item-right {
   display: flex;

@@ -191,6 +191,11 @@ header {
       z-index: 10;
     }
   }
+  .offers-slider-container {
+    &__yMap {
+      display: none;
+    }
+  }
   &__our-offers {
     @include blockCenter();
     margin-top: 400px;
@@ -229,6 +234,16 @@ header {
         .item-2 input[type="radio"]:checked + label {
           color: #fff;
           background: $greenDark;
+        }
+      }
+      .yMap-right {
+        align-self: center;
+        display: none;
+        &__title {
+          a {
+            color: $blueDark;
+            text-decoration: none;
+          }
         }
       }
       &__item-right {
