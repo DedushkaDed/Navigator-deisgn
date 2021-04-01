@@ -235,6 +235,9 @@ header {
   margin-right: auto;
   margin-top: 400px;
 }
+.main__our-offers .swiper__image img {
+  max-height: 266px;
+}
 .main__our-offers__items {
   display: flex;
   justify-content: space-between;
@@ -286,6 +289,7 @@ header {
   display: flex;
 }
 .main__our-offers__items__item-right div {
+  cursor: pointer;
   flex: 1 1 auto;
   margin: 0 5px;
   transform: translateY(5px);
@@ -887,6 +891,7 @@ header {
   background: #6BBD45;
 }
 .main__what-new__items__item-right {
+  cursor: pointer;
   display: flex;
 }
 .main__what-new__items__item-right div {

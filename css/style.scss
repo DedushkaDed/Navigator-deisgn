@@ -200,6 +200,11 @@ header {
     @include blockCenter();
     margin-top: 400px;
 
+    .swiper__image {
+      img {
+        max-height: 266px;
+      }
+    }
     &__items {
       display: flex;
       justify-content: space-between;
@@ -250,6 +255,7 @@ header {
         display: flex;
       }
       &__item-right div {
+        cursor: pointer;
         flex: 1 1 auto;
         margin: 0 5px;
         transform: translateY(5px); //Костыль-элемент приподнят на веерх.
@@ -819,6 +825,7 @@ header {
         }
       }
       &__item-right {
+        cursor: pointer;
         display: flex;
       }
       &__item-right div {
