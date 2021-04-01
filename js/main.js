@@ -1,25 +1,36 @@
 
+// Модальные окна
+var $formPopup = document.getElementById('popup');
+var $formPopupSucces = document.getElementById('popup-2');
+// Слайдер с предложениями
+var $ourOffersSlider = document.querySelector('.our-offers-slider');
+
 
 function showContactCall() {
-    let $form = document.getElementById('popup');
-    $form.style.display = 'block';
-    $form.style.opacity = 1;
+    $formPopup.style.display = 'block';
+    $formPopup.style.opacity = 1;
 }
 function closeContactForm() {
-    let $form = document.getElementById('popup');
-    let $formSucces = document.getElementById('popup-2');
-    $form.style.display = 'none';
-    $form.style.opacity = 0;
-    $formSucces.style.display = 'none';
-    $formSucces.style.opacity = 0;
+    // 1
+    $formPopup.style.display = 'none';
+    $formPopup.style.opacity = 0;
+    // 2
+    $formPopupSucces.style.display = 'none';
+    $formPopupSucces.style.opacity = 0;
 
 }
 function showContactCallSucess() {
-    let $form = document.getElementById('popup');
-    $form.style.display = 'none';
-    $form.style.opacity = 0;
-
-    let $formSucces = document.getElementById('popup-2');
-    $formSucces.style.display = 'block';
-    $formSucces.style.opacity = 1;
+    // 1
+    $formPopup.style.display = 'none';
+    $formPopup.style.opacity = 0;
+    // 2
+    $formPopupSucces.style.display = 'block';
+    $formPopupSucces.style.opacity = 1;
+}
+function showMap() {
+    
+    $ourOffersSlider.style.display = 'none';
+}
+function showOffers() {
+    $ourOffersSlider.style.display = 'block';
 }
