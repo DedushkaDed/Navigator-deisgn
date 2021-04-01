@@ -66,6 +66,10 @@ h5 {
   cursor: pointer;
 }
 
+.btn-adaptive {
+  display: none;
+}
+
 header {
   padding: 20px 0;
   margin: 0 auto;
@@ -1231,4 +1235,103 @@ header {
 .popup-2 .telephone {
   padding-top: 30px;
   display: inline-block;
+}
+
+/* Адаптация 320px */
+.adaptive-menu {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  .adaptive-menu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 100;
+    transition: all 0.4s;
+  }
+  .adaptive-menu__inner {
+    width: 100%;
+    height: 100%;
+  }
+  .adaptive-menu__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .adaptive-menu__content .col-left {
+    background-color: #000000;
+    opacity: 30%;
+    flex-basis: 40%;
+  }
+  .adaptive-menu__content .col-right {
+    flex-basis: 60%;
+  }
+  .adaptive-menu__content .col-right .inner {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .adaptive-menu__content .col-right .inner .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .adaptive-menu__content .col-right .inner .phone-adaptive {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2983D4;
+  }
+  .adaptive-menu__content .col-right .inner .nav-menu {
+    display: block;
+  }
+  .adaptive-menu__content .col-right .inner .nav-menu .main-menu li {
+    margin: 0;
+    padding: 10px 0;
+  }
+  .adaptive-menu__content .col-right .inner .nav-menu .main-menu li a::after {
+    top: 18px;
+    right: -15px;
+  }
+  .adaptive-menu__content .col-right .inner .social {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .adaptive-menu__content .col-right .inner .btn-action-adaptive {
+    width: 216px;
+    height: 50px;
+  }
+
+  header .btn-adaptive {
+    display: block;
+  }
+  header .btn {
+    display: none;
+  }
+  header .container {
+    justify-content: space-around;
+  }
+  header .container .logo img {
+    width: 83px;
+    height: 44px;
+  }
+  header .container .nav-menu {
+    display: none;
+  }
+  header .container .phone {
+    display: none;
+  }
+  header .container .btn-action {
+    width: 37px;
+    height: 37px;
+  }
 }

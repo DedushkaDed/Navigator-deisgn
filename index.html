@@ -63,7 +63,75 @@
           </ul>
         </nav>
         <div class="phone">+7 3452 <b>564-276</b></div>
-        <div><button class="btn btn-action" onclick="showContactCall()">Заказать звонок</button></div>
+        <div>
+          <button class="btn btn-action" onclick="showContactCall()">Заказать звонок</button>
+          <button class="btn-adaptive btn-action" onclick="showMenuAdaptive()"><img src="img/content/mobile/menu.svg" alt="menu.svg"></button>
+        </div>
+        <div class="adaptive-menu">
+          <div class="adaptive-menu__inner">
+            <div class="adaptive-menu__content">
+              <div class="col-left">
+                123
+                <!-- min-width? -->
+                <!-- background grey -->
+              </div>
+              <div class="col-right">
+                <div class="inner">
+                  <div class="header">
+                    <button class="btn-adaptive btn-action" onclick="closeMenuAdaptive()"><img src="img/content/mobile/icons/x-mark.svg" alt="x-mark.svg"></button>
+                  </div>
+                  <section class="phone-adaptive">+ 7 3452 <b>564-276</b></section>
+                  <nav class="nav-menu">
+                    <ul class="main-menu">
+                      <li>
+                        <a class="cheked" href="">О компании</a>
+                        <ul class="submenu">
+                          <li><a href="#">Компания</a></li>
+                          <li><a href="#">Нововсти</a></li>
+                          <li><a href="#">Истории жителей</a></li>
+                          <li><a href="#">Полезные статьи</a></li>
+                          <li><a href="#">Тендеры</a></li>
+                          <li><a href="#">Вакансии</a></li>
+                          <li><a href="#">Контакты</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Коттеджные поселки</a>
+                        <ul class="submenu">
+                          <li><a href="#">Альпийская долина</a></li>
+                          <li><a href="#">Есенино</a></li>
+                          <li><a href="#">Ёлки</a></li>
+                          <li><a href="#">Выбрать участок</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Покупателям</a>
+                        <ul class="submenu">
+                          <li><a href="#">Рассрочка</a></li>
+                          <li><a href="#">Ипотека</a></li>
+                          <li><a href="#">Цены</a></li>
+                          <li><a href="#">Лояльный покупатель</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="">Обслуживающая компания</a></li>
+                      <li><a href="">Таунхаусы</a></li>
+                    </ul>
+                  </nav>
+                  <div class="social">
+                    <img src="img/content/mobile/icons/facebook.svg" alt="facebook.svg">
+                    <img src="img/content/mobile/icons/vk.svg" alt="vk.svg">
+                    <img src="img/content/mobile/icons/instagram.svg" alt="instagram.svg">
+                    <img src="img/content/mobile/icons/youtube.svg" alt="youtube.svg">
+                    <img src="img/content/mobile/icons/odnoclassniki.svg" alt="odnoclassniki.svg">
+                  </div>
+                  <div>
+                    <button class="btn-action-adaptive btn-action">Заказать звонок</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -976,4 +1044,5 @@
   <script src="js/swiper.js"></script>
   <script src="js/sliderJQUERY.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/main-adaptive.js"></script>
 </html>
