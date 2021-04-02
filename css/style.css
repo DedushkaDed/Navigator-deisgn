@@ -466,14 +466,15 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 650px;
 }
 .main__about-company__wrapper__main-items__item {
   display: flex;
   flex-direction: column;
   border: 1px solid #D1D1D1;
 }
-.main__about-company__wrapper__main-items__slider {
-  height: 490px;
+.main__about-company__wrapper__main-items__slider .image-slider {
+  max-height: 430px;
 }
 .main__about-company__wrapper .swiper-container {
   text-align: center;
@@ -1438,5 +1439,36 @@ header {
 
   .main__choose-dacha__container__submit-button {
     text-align: center;
+  }
+
+  .main__about-company__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .main__about-company__wrapper__main-items {
+    width: 100%;
+  }
+
+  .main__about-company__wrapper__side-items {
+    flex-direction: row;
+  }
+
+  .main__about-company__wrapper__side-items__item {
+    width: 150px;
+    height: 200px;
+  }
+
+  .main__about-company__wrapper__side-items__item {
+    height: auto !important;
+    width: 265px;
+    padding: 10px 20px !important;
+  }
+
+  .main__about-company__wrapper__main-items__item-main {
+    display: none !important;
+  }
+
+  .main__about-company__wrapper__main-items {
+    height: auto;
   }
 }
