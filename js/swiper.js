@@ -61,8 +61,8 @@ var swiper3 = new Swiper(
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".zemlya-arrow-right",
+      prevEl: ".zemlya-arrow-left",
     },
     // Бесконечный слайдер
     loop: true,
@@ -100,33 +100,33 @@ var swiper3 = new Swiper(".main__what-new__slider-container__swiper-container", 
   },
 });
 
-var swiper4 = new Swiper(".main__about-company__wrapper__side-items", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  freeMode: true,
+// var swiper4 = new Swiper(".main__about-company__wrapper__side-items", {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   freeMode: true,
 
-  navigation: {
-    nextEl: ".what-new__arrow-right",
-    prevEl: ".what-new__arrow-left",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // Бесконечный слайдер
-  loop: true,
-  // Брейк поинты (адаптив)
-  // Ширина экрана
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    480: {
-      slidesPerView: 2,
-    },
-    992: {
-      slidesPerView: 3,
-    },
-  },
-});
+//   navigation: {
+//     nextEl: ".what-new__arrow-right",
+//     prevEl: ".what-new__arrow-left",
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   // Бесконечный слайдер
+//   loop: true,
+//   // Брейк поинты (адаптив)
+//   // Ширина экрана
+//   breakpoints: {
+//     320: {
+//       slidesPerView: 1,
+//     },
+//     480: {
+//       slidesPerView: 2,
+//     },
+//     992: {
+//       slidesPerView: 3,
+//     },
+//   },
+// });
 

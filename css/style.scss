@@ -888,6 +888,10 @@ header {
       }
     }
   }
+  .zemlya-arrow-left,
+  .zemlya-arrow-right {
+    cursor: pointer;
+  }
 }
 
 .footer {
@@ -1223,7 +1227,6 @@ header {
           width: 100%;
           height: 100%;
           padding: 10px;
-
           .header {
             display: flex;
             justify-content: flex-end;
@@ -1416,5 +1419,38 @@ header {
   }
   .main__about-company__wrapper__main-items {
     height: auto;
+  }
+  // Купить участок просто
+  .main__buy-uchastok__wrapper__item label {
+    padding: 5px 10px;
+  }
+  .main__buy-uchastok {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__buy-uchastok__4-shaga-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__buy-uchastok__title {
+    font-size: 22px;
+    padding: 20px;
+  }
+  .main__buy-uchastok__4-shaga-items__wrapper {
+    padding: 20px 50px;
+  }
+  .main__buy-uchastok__4-shaga-items__wrapper__item {
+    margin: auto;
+  }
+  .main__buy-uchastok__4-shaga-items__wrapper__item__title {
+    display: none;
+    padding: 5px;
+    text-align: center;
+  }
+  .main__buy-uchastok__4-shaga-items__wrapper__item::before {
+    left: 100px;
+  }
+  .main__buy-uchastok__4-shaga-items__wrapper__item::after {
+    display: none;
   }
 }
