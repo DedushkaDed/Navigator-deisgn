@@ -48,7 +48,7 @@ function showOffers() {
     $ourOffersRightItem.style.display = "none";
   } else {
     // Показываем переключение слайдов с предложениями
-    $ourOffersRightItem.style.display = "block";
+    $ourOffersRightItem.style.display = "flex";
   }
   // Скрываем блок yandexMap
   $yMapOurOffers.style.display = "none";
