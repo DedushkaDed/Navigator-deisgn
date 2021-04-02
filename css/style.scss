@@ -616,6 +616,8 @@ header {
         }
       }
       &__form-wrapper {
+        z-index: 1;
+        position: relative;
         &__form input[type="text"],
         input[type="tel"] {
           margin-right: 35px;
@@ -646,6 +648,7 @@ header {
       border: 7px solid transparent;
       border-image: linear-gradient(to bottom, #2983d4 50%, #7ec95c 61%) 15% 10%;
       border-right: none;
+      z-index: 1;
     }
     &__container::after {
       content: "";
@@ -659,6 +662,7 @@ header {
     }
   }
   &__subscribe-to-watch-background {
+    z-index: -10;
     background: url(../img/content-background/choose-dacha-background.svg)
       no-repeat;
     min-height: 438px;
