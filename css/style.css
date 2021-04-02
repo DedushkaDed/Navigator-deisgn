@@ -1354,10 +1354,18 @@ header {
   main .main__prod-container .main__prod-plusi .main__prod-plusi__text .main__prod-plusi__description {
     font-size: 20px;
   }
+  main .main__prod-container .main__prod-plusi .main__prod-plusi__items {
+    justify-content: unset;
+    padding: 20px 0;
+  }
+  main .main__prod-container .main__prod-plusi .main__prod-plusi__items__item {
+    padding: 20px 25px;
+  }
   main .main__prod-container .main__prod-plusi .main__prod-plusi__items::before {
     border-image: linear-gradient(to bottom, #2983d4 0, #7ec95c 46%) 35% 10%;
     top: 150px;
     left: 0;
+    bottom: -10px;
   }
 
   .main__our-offers {
