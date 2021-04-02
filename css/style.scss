@@ -287,7 +287,7 @@ header {
           @include body4();
         }
         .swiper__description-container .description {
-          padding: 10px;
+          padding: 15px;
         }
         .swiper__description-container .stats {
           padding: 15px 30px;
@@ -1320,6 +1320,30 @@ header {
   }
 
   .main__our-offers {
-    margin-top: 700px;
+    margin-top: 250px;
+
+    .main__our-offers__items {
+      padding: 1.5em;
+     
+      .main__our-offers__items__item-right {
+        display: none;
+      }
+      .main__our-offers__items__item-left {
+        .item-1 label, .item-2 label {
+          padding: 4px 25px;
+        }
+      }
+    }
+    .offers-slider-container {
+
+      .swiper__image img {
+        max-height: 206px;
+      }
+      .swiper__description-container {
+        .stats {
+          display: none;
+        }
+      }
+    }
   }
 }

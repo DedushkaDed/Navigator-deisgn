@@ -324,7 +324,7 @@ header {
   line-height: 16px;
 }
 .main__our-offers .swiper-container .swiper-wrapper .swiper__description-container .description {
-  padding: 10px;
+  padding: 15px;
 }
 .main__our-offers .swiper-container .swiper-wrapper .swiper__description-container .stats {
   padding: 15px 30px;
@@ -1369,6 +1369,21 @@ header {
   }
 
   .main__our-offers {
-    margin-top: 700px;
+    margin-top: 250px;
+  }
+  .main__our-offers .main__our-offers__items {
+    padding: 1.5em;
+  }
+  .main__our-offers .main__our-offers__items .main__our-offers__items__item-right {
+    display: none;
+  }
+  .main__our-offers .main__our-offers__items .main__our-offers__items__item-left .item-1 label, .main__our-offers .main__our-offers__items .main__our-offers__items__item-left .item-2 label {
+    padding: 4px 25px;
+  }
+  .main__our-offers .offers-slider-container .swiper__image img {
+    max-height: 206px;
+  }
+  .main__our-offers .offers-slider-container .swiper__description-container .stats {
+    display: none;
   }
 }
