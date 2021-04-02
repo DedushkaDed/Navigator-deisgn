@@ -1244,7 +1244,6 @@ header {
 
 @media screen and (max-width: 320px) {
   .adaptive-menu {
-    display: block;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -1333,5 +1332,35 @@ header {
   header .container .btn-action {
     width: 37px;
     height: 37px;
+  }
+
+  main .main__prod-container .main__prod-section {
+    min-height: 300px;
+    margin: 0;
+  }
+  main .main__prod-container .main__prod-plusi {
+    margin: -190px 0px;
+    margin-right: 20px;
+    padding-left: 0;
+  }
+  main .main__prod-container .main__prod-plusi .main__prod-plusi__text {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  main .main__prod-container .main__prod-plusi .main__prod-plusi__text .main__prod-plusi__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main .main__prod-container .main__prod-plusi .main__prod-plusi__text .main__prod-plusi__description {
+    font-size: 20px;
+  }
+  main .main__prod-container .main__prod-plusi .main__prod-plusi__items::before {
+    border-image: linear-gradient(to bottom, #2983d4 0, #7ec95c 46%) 35% 10%;
+    top: 150px;
+    left: 0;
+  }
+
+  .main__our-offers {
+    margin-top: 700px;
   }
 }
