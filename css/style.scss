@@ -1290,7 +1290,7 @@ header {
         margin: -190px 0px;
         margin-right: 20px;
         padding-left: 0;
-        
+
         .main__prod-plusi__text {
           padding: 30px;
           background-color: rgba($color: #000000, $alpha: 0.4);
@@ -1310,7 +1310,8 @@ header {
           padding: 20px 25px;
         }
         .main__prod-plusi__items::before {
-          border-image: linear-gradient(to bottom, #2983d4 0, #7ec95c 46%) 35% 10%;
+          border-image: linear-gradient(to bottom, #2983d4 0, #7ec95c 46%) 35%
+            10%;
           top: 150px;
           left: 0;
           bottom: -10px;
@@ -1318,24 +1319,23 @@ header {
       }
     }
   }
-
   .main__our-offers {
     margin-top: 250px;
 
     .main__our-offers__items {
       padding: 1.5em;
-     
+
       .main__our-offers__items__item-right {
         display: none;
       }
       .main__our-offers__items__item-left {
-        .item-1 label, .item-2 label {
+        .item-1 label,
+        .item-2 label {
           padding: 4px 25px;
         }
       }
     }
     .offers-slider-container {
-
       .swiper__image img {
         max-height: 206px;
       }
@@ -1345,5 +1345,46 @@ header {
         }
       }
     }
+  }
+  .main__choose-dacha {
+    margin: 100px 25px;
+  }
+  .main__border {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .main__border::before {
+    top: -70px;
+    bottom: -70px;
+  }
+  .main__border::after {
+    top: -70px;
+    bottom: -70px;
+  }
+  .main__choose-dacha-background {
+    margin-top: -600px;
+  }
+  .main__choose-dacha__title-wrapper {
+    padding: 0 6px; // Исправить?
+    font-size: 22px;
+  }
+  .main__choose-dacha__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .main__choose-dacha__container__price-block__title {
+    padding: 15px;
+  }
+  .main__choose-dacha__container__price-block__wrapper-slider {
+    padding: 0 20px;
+  }
+  .main__choose-dacha__container__price-block__total {
+    padding: 15px 17px;
+  }
+  .main__choose-dacha__container__submit-button {
+    text-align: center;
   }
 }
